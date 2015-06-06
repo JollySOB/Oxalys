@@ -2367,8 +2367,8 @@ input[type="button"].btn-block {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../assets/fonts/glyphicons-halflings-regular.eot');
+  src: url('../assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5517,6 +5517,7 @@ button.close {
 .carousel-control .glyphicon-chevron-left {
   left: 50%;
 }
+
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-right {
   right: 50%;
@@ -5827,5 +5828,17 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+
+/*CUSTOMIZATIONS*/
+
+.glyphicon-chevron-left {
+	font-size: 2em;
+	float: left;
+}
+
+.glyphicon-chevron-right {
+	font-size: 2em;
+	float: right;
 }
 /*# sourceMappingURL=bootstrap.css.map */
