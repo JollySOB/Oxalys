@@ -5830,15 +5830,20 @@ td.visible-print {
   }
 }
 
-/*CUSTOMIZATIONS*/
+/*	=======================
+	CUSTOMIZATIONS
+	=======================
+*/
 
 .glyphicon-chevron-left {
 	font-size: 2em;
 	float: left;
+	color: white;
 }
 
 .glyphicon-chevron-right {
 	font-size: 2em;
 	float: right;
+	color: white;
 }
 /*# sourceMappingURL=bootstrap.css.map */

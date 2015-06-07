@@ -507,6 +507,51 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	right: 30px;
 }
 
+/* =========================================================================
+	CUSTOMIZATIONS
+   ========================================================================*/
+   
+.slide {
+	display: none;
+	margin-top: 50px;
+	padding-top: 200px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 100px;
+}
+
+#header #left-nav, #header #right-nav{
+	margin-top: 20%;
+	display: inline;
+}
+
+.active-slide{
+	display: block;
+}
+
+#slide1 {
+	background-image: url(../img/header_bg.jpg);
+}
+
+#slide2{
+	background-image: url(../img/MySecretFriend.jpg);
+}
+
+#slide3 {
+	background-image: url(../img/FindingNeverland.jpg);
+}
+
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
