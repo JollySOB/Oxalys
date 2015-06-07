@@ -1,8 +1,52 @@
 <?php
+//Third party library for sending e-mail.
+require_once("PHPMailer/class.phpmailer.php");
+require_once("PHPMailer/class.smtp.php");
+
+//Check if an email message has just been sent.
+if (isset($_POST['name'])) {
+	
+	$response_message = "";
+	
+	//Extract form input.
+	$sender_name = trim($_POST["name"]);
+	$sender_email = trim($_POST["email"]);
+	$sender_message = trim($_POST["message"]);
+	
+	//Validate input and modify response message.
+	if ($_POST['spam-honeypot'] != "") {
+		$response_message = "Sorry, there was something wrong with your input. Please try again.";
+	}
+	
+	else if ($_POST['spam-test'] != 12) {
+		$response_message ="Please make sure that you've answered the question correctly.";
+	}
+	
+	else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		$response_message = "Please ensure that you've provided a valid email address!";
+	}
+	
+	else {
+		$response_message = "Thank you for your input!";
+		
+		//Send mail
+		$mail = new PHPmailer();
+		//$mail->SMTPDebug = 3;
+		$mail->IsSMTP();    
+		$mail->SMTPAuth = true;
+		$mail->SMTPSecure = 'tls';
+		$mail->Host = "smtp.gmail.com";
+		$mail->Port = 587;
+		$mail->Username = "contactcommunityfund@gmail.com";
+		$mail->Password = "community693";
+		$mail->From = $email;
+		$mail->FromName = $name;
+		$mail->Body = $message;
+		$mail->addAddress("contactcommunityfund@gmail.com");                                                     
+	}
+}
 	
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -316,7 +360,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        <form id="contact" method="post" class="form" role="form">
+        <form id="contact" action="index.php" method="post" class="form" role="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">
               <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
@@ -326,20 +370,27 @@
             </div>
           </div>
           <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
-          <p>Please answer the following question and type your answer below. 7 + 5 = ?<p>
+		  <?php
+			if (isset($_POST['name'])){
+		  ?>
+				<p>Blaegh!</p>
+		  <?php
+			}	
+			else {
+				echo "<p>Please answer the following question in the box below: 7 + 5 = ?</p>";
+			}
+		  ?>
 		  <div class="row">
 			<div class="col-xs-6 col-md-6 form-group">
-				<input id="spam-test" class="form-control" name="spam-test" type="text" placeholder="Your answer here:" required />
+				<input class="form-control" id="spam-test" name="spam-test" type="text" placeholder="Your answer here:" required />
 			</div>
-		  </div>
-		  <div class="row">
 			<div class="col-xs-6 col-md-6 form-group">
-				<input class="form-control" id="spam-honeypot" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!">
+				<input class="form-control" id="spam-honeypot" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!"/>
 			</div>
-		  </div>
             <div class="col-xs-12 col-md-12">
-				<button id="contact-button" class="" type="submit">Send Message</button>
+              <button class="btn btn btn-lg" type="submit">Send Message</button>
             </div>
+          </div>
         </form>
         <!-- form --> 
       </div>

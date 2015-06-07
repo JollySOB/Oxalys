@@ -457,7 +457,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
    ========================================================================*/
 
 
-/* HEADER SLIDEs */   
+/* HEADER SLIDES */   
 .slide {
 	display: none;
 	margin-top: 50px;
@@ -508,14 +508,23 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 #spam-test {
 	position: relative;
 	left: 50%;
+	margin-bottom: 1%;
 }
 
 #spam-honeypot {
 	display: none;
-	margin-top: 0.5%;
+	margin-top: 1%;
 	position: relative;
 	left: 50%;
 }
+
+/* TO DO: center the button properly, using a computed value.*/
+#contact-button {
+	position: relative;
+	right: 3.5%;
+	margin-top: 1%;
+}
+
 
 /* ==========================================================================
    MEDIA QUERIES
