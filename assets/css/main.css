@@ -512,7 +512,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 #spam-honeypot {
 	display: none;
-	margin-top: 5%;
+	margin-top: 0.5%;
 	position: relative;
 	left: 50%;
 }
