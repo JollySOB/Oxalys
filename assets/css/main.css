@@ -455,7 +455,9 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 /* =========================================================================
 	CUSTOMIZATIONS
    ========================================================================*/
-   
+
+
+/* HEADER SLIDEs */   
 .slide {
 	display: none;
 	margin-top: 50px;
@@ -499,6 +501,20 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 #slide3 {
 	background-image: url(../img/FindingNeverland.jpg);
+}
+
+
+/* CONTACT FORM */
+#spam-test {
+	position: relative;
+	left: 50%;
+}
+
+#spam-honeypot {
+	display: none;
+	margin-top: 5%;
+	position: relative;
+	left: 50%;
 }
 
 /* ==========================================================================
