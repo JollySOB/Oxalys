@@ -64,7 +64,7 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 <script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+<!-- TODO: determine if we actually need this script<script type="text/javascript" src="assets/js/modernizr.custom.js"></script> -->
 
 <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -421,10 +421,11 @@
 
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
 <!--<script type="text/javascript" src="assets/js/retina.js"></script>--> 
-<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script> 
-<script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-<script type="text/javascript" src="assets/js/jquery-func.js"></script>
-<script type="text/javascript" src="assets/js/custom.js"></script>
+<!--404 WHY? ASSES WHETHER IT IS NEEDED <script type="text/javascript" src="jquery.easing.1.3.js"></script>--> 
+<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script> 
+<script type="text/javascript" src="assets/js/jquery-func.min.js"></script>
+<!-- Script is small enough not to warrant its own file and an extra request.-->
+<script>var $FIRST_SLIDE=$("#slide1");var $LAST_SLIDE=$("#slide3");var $currentSlide=$("#slide1");$("#left-nav").click(function(){$currentSlide.removeClass("active-slide");if($currentSlide.attr("id")==$FIRST_SLIDE.attr("id")){$LAST_SLIDE.addClass("active-slide");$currentSlide=$LAST_SLIDE}else{$currentSlide.prev().addClass("active-slide");$currentSlide=$currentSlide.prev()}});$("#right-nav").click(function(){$currentSlide.removeClass("active-slide");if($currentSlide.attr("id")==$LAST_SLIDE.attr("id")){$FIRST_SLIDE.addClass("active-slide");$currentSlide=$FIRST_SLIDE}else{$currentSlide.next().addClass("active-slide");$currentSlide=$currentSlide.next()}});</script>
 <?php
 	if (isset($_POST["name"])) {
 		echo '<script type="text/javascript">window.scrollTo(0,document.body.scrollHeight);</script>';
