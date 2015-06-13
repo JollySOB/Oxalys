@@ -5839,11 +5839,13 @@ td.visible-print {
 	font-size: 2em;
 	float: left;
 	color: white;
+	z-index: 4;
 }
 
 .glyphicon-chevron-right {
 	font-size: 2em;
 	float: right;
 	color: white;
+	z-index: 4;
 }
 /*# sourceMappingURL=bootstrap.css.map */

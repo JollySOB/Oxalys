@@ -204,11 +204,6 @@ a:before, a:after {
    Wrap Sections
    ========================================================================== */
 
-
-#about {
-	background: #fff;
-	padding: 60px 0;
-}
 #about img {
 	margin-top: 65px;
 }
@@ -273,7 +268,7 @@ a:before, a:after {
 #contact .btn {
 	font-weight: 500;
 	font-size: 18px;
-	margin-top: 50px;
+	margin-top: 1%;
 	background-color: #ffbf00;
 	color: #fff;
 	border: 0;
@@ -457,9 +452,13 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
    ========================================================================*/
 
 
-/* HEADER SLIDES */   
+/*CAROUSEL SLIDES*/
+#carousel{
+	position: relative;
+}
+
 .slide {
-	display: none;
+	position: absolute;
 	margin-top: 50px;
 	padding-top: 200px;
 	text-align: center;
@@ -487,42 +486,49 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	opacity: 0.25;
 }
 
-.active-slide{
-	display: block;
-}
-
 #slide1 {
 	background-image: url(../img/header_bg.jpg);
+	z-index: 3;
 }
 
 #slide2{
 	background-image: url(../img/MySecretFriend.jpg);
+	z-index: 2;
 }
 
 #slide3 {
 	background-image: url(../img/FindingNeverland.jpg);
+	z-index: 1;
 }
 
+/*ABOUT SECTION*/
+#about {
+	background: #fff;
+}
 
 /* CONTACT FORM */
-#spam-test {
+/*#spam-test {
 	position: relative;
 	left: 50%;
 	margin-bottom: 1%;
+}*/
+
+#spam-honeypot-container {
+	position: relative;
+	left: 50%;
+	margin-top: 2%;
+	margin-left: -173.75px;
 }
 
 #spam-honeypot {
 	display: none;
-	margin-top: 1%;
-	position: relative;
-	left: 50%;
+	text-align: center;
 }
 
-/* TO DO: center the button properly, using a computed value.*/
-#contact-button {
-	position: relative;
-	right: 3.8%;
-	margin-top: 1%;
+#contact-button{
+	positition: relative;
+	left: 50%;
+	margin-left: -55.5px;
 }
 
 

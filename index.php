@@ -19,8 +19,12 @@
 			$response_message = "Sorry, but there was something wrong with your input, please try again.";
 		}
 		
-		else if ($_POST['spam-test'] != $spam_test_answer) {
+		/* else if ($_POST['spam-test'] != $spam_test_answer) {
 			$response_message = "Please make sure to correctly answer the question below!";
+		} */
+		
+		else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			$response_message = "Please ensure that you have provided a valid e-mail address!";
 		}
 		
 		else {
@@ -50,9 +54,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>ALPHA</title>
+<meta name="description" content="Oxalys Blah!">
+<meta name="author" content="Cody Rosevear">
+<title>Oxalys Pharmaceuticals: Huntington's And Parkinson's Disease Therapeutics</title>
 
 <!-- Bootstrap core CSS -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -60,11 +64,10 @@
 <!-- Custom CSS -->
 <link href="assets/css/main.css" rel="stylesheet">
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-<link href="assets/css/animate-custom.css" rel="stylesheet">
+<!-- <link href="assets/css/animate-custom.css" rel="stylesheet"> -->
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-<script src="assets/js/jquery.min.js"></script>
-<!-- TODO: determine if we actually need this script<script type="text/javascript" src="assets/js/modernizr.custom.js"></script> -->
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 
 <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -125,7 +128,39 @@
 	</div>
 </div>
 <!-- /headerwrap --> 
-
+<!-- Erase this once a better solution is found -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> 
 <!-- ==== ABOUT ==== -->
 <div id="about" name="about">
   <div class="container">
@@ -369,25 +404,18 @@
           <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
 		  <?php
 			if (isset($_POST['name'])) {
-				echo "<p>$response_message</p></span>";
+				echo "<br><p>$response_message</p></span>";
 			}
-			echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
+			//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
 		  ?>
+		  <!--<div class="row"><div class="col-xs-6 col-md-6 form-group"><input id="spam-test" class="form-control" name="spam-test" type="text" placeholder="Your answer here:" required /></div></div>-->
 		  <div class="row">
-			<div class="col-xs-6 col-md-6 form-group">
-				<input id="spam-test" class="form-control" name="spam-test" type="text" placeholder="Your answer here:" required />
+			<div id="spam-honeypot-container" class="col-xs-6 col-md-6 form-group">
+				<input id="spam-honeypot" class="form-control" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!">
 			</div>
-		  </div>
-		  <div class="row">
-			<div class="col-xs-6 col-md-6 form-group">
-				<input class="form-control" id="spam-honeypot" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!">
-			</div>
-		  </div>
-		  <div>
-			<input type="hidden" name="contact_request" value="1">
 		  </div>
             <div class="col-xs-12 col-md-12">
-				<button id="contact-button" class="" type="submit">Send Message</button>
+				<button id="contact-button" class="btn btn-lg" type="submit">Send Message</button>
             </div>
         </form>
         <!-- form --> 
@@ -418,14 +446,15 @@
 <!-- Bootstrap core JavaScript
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
-
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
-<!--<script type="text/javascript" src="assets/js/retina.js"></script>--> 
-<!--404 WHY? ASSES WHETHER IT IS NEEDED <script type="text/javascript" src="jquery.easing.1.3.js"></script>--> 
-<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script> 
-<script type="text/javascript" src="assets/js/jquery-func.min.js"></script>
-<!-- Script is small enough not to warrant its own file and an extra request.-->
-<script>var $FIRST_SLIDE=$("#slide1");var $LAST_SLIDE=$("#slide3");var $currentSlide=$("#slide1");$("#left-nav").click(function(){$currentSlide.removeClass("active-slide");if($currentSlide.attr("id")==$FIRST_SLIDE.attr("id")){$LAST_SLIDE.addClass("active-slide");$currentSlide=$LAST_SLIDE}else{$currentSlide.prev().addClass("active-slide");$currentSlide=$currentSlide.prev()}});$("#right-nav").click(function(){$currentSlide.removeClass("active-slide");if($currentSlide.attr("id")==$LAST_SLIDE.attr("id")){$FIRST_SLIDE.addClass("active-slide");$currentSlide=$FIRST_SLIDE}else{$currentSlide.next().addClass("active-slide");$currentSlide=$currentSlide.next()}});</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="assets/js/retina.js"></script>-->
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+<script type="text/javascript" src="assets/js/interact.js"></script>
+<script type="text/javascript" src="assets/js/carousel.js"></script>
 <?php
 	if (isset($_POST["name"])) {
 		echo '<script type="text/javascript">window.scrollTo(0,document.body.scrollHeight);</script>';
