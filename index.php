@@ -100,7 +100,6 @@
           <li><a id="home-link" href="#slide1" class="smoothScroll">Home</a></li>
           <li> <a href="#about" class="smoothScroll"> About</a></li>
           <li> <a href="#services" class="smoothScroll"> Services</a></li>
-          <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
           <li> <a href="#team" class="smoothScroll"> Team</a></li>
           <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
         </ul>
@@ -138,6 +137,7 @@
 </div>
 <!-- /headerwrap --> 
 <!-- Erase this once a better solution is found -->
+
 <br>
 <br>
 <br>
@@ -169,7 +169,6 @@
 <br>
 <br>
 <br>
-<br> 
 <!-- ==== ABOUT ==== -->
 <div id="about" name="about">
   <div class="container">
@@ -216,24 +215,9 @@
 </div>
 <!-- container --> 
 
-<!-- ==== PORTFOLIO ==== -->
-<div id="portfolio" name="portfolio">
-  <div class="container">
-    <div class="row">
-      <h2 class="centered">OUR PORTFOLIO</h2>
-      <hr>
-      <div class="col-lg-8 col-lg-offset-2 centered">
-        <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-      </div>
-    </div>
-    <!-- /row -->
-    <div class="container">
-      <div class="row"> 
+<!-- ===== MODAL WINDOWS FOR TEAM BIOGRAPHIES ===== -->
               
-        <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
-						      a modal for each of your projects. -->
-        
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -255,6 +239,72 @@
         </div>
         <!-- /.modal --> 
        
+	   <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Jessica Schmoe</h4>
+              </div>
+              <div class="modal-body">
+                <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
+                <p>Blah</p>
+                <p><b><a href="#">External links!</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+		
+		<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Jessica Schmoe</h4>
+              </div>
+              <div class="modal-body">
+                <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
+                <p>Blah</p>
+                <p><b><a href="#">External links!</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+		
+		<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Jessica Schmoe</h4>
+              </div>
+              <div class="modal-body">
+                <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
+                <p>Blah!</p>
+                <p><b><a href="#">External links!</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+
 <!-- ==== TEAM MEMBERS ==== -->
 <div id="team" name="team">
   <div class="container">
@@ -264,22 +314,22 @@
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team01.jpg" height="120px" width="120px" alt="">
         <h4><strong>Jessica</strong></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
-		<a data-toggle="modal" href="#myModal" class="btn btn-default">Bio</a>
+		<a data-toggle="modal" href="#modal1" class="btn btn-default">Bio</a>
 	 </div>
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team02.jpg" height="120px" width="120px" alt="">
         <h4><b>Mike</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
-		<a data-toggle="modal" href="#myModal" class="btn btn-default">Bio</a>
+		<a data-toggle="modal" href="#modal2" class="btn btn-default">Bio</a>
 	  </div>
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team03.jpg" height="120px" width="120px" alt="">
         <h4><b>Michele</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
-		<a data-toggle="modal" href="#myModal" class="btn btn-default">Bio</a>
+		<a data-toggle="modal" href="#modal3" class="btn btn-default">Bio</a>
       </div>
 	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team04.jpg" height="120px" width="120px" alt="">
         <h4><b>Larry</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
-		<a data-toggle="modal" href="#myModal" class="btn btn-default">Bio</a>
+		<a data-toggle="modal" href="#modal4" class="btn btn-default">Bio</a>
 	  </div>
       <div class="col-lg-8 col-lg-offset-2 centered">
         <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
