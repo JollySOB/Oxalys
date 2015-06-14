@@ -229,21 +229,7 @@
     <!-- /row -->
     <div class="container">
       <div class="row"> 
-        
-        <!-- PORTFOLIO IMAGE 1 -->
-        <div class="col-md-4 ">
-          <div class="grid mask">
-            <figure> <img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt="">
-              <figcaption>
-                <h5>UX / UI</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-              <!-- /figcaption --> 
-            </figure>
-            <!-- /figure --> 
-          </div>
-          <!-- /grid-mask --> 
-        </div>
-        
+              
         <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
 						      a modal for each of your projects. -->
         
@@ -252,12 +238,12 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Project Title</h4>
+                <h4 class="modal-title">Jessica Schmoe</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/portfolio/folio01-preview.jpg" alt=""></p>
-                <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel</p>
-                <p><b><a href="#">Visit Site</a></b></p>
+                <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
+                <p> Katharine co-founded Oxalys Pharmaceuticals as a progression of her research on neuroscience and drug discovery at MIT andHarvard Medical School.  She has been a collaborator with Oxalys Co-Founder Joost Schulte for over 15 years. She has developed novel drug discovery assays for disease-modification of neurodegenerative disorders. These assays have led to the development of the Oxalys pharmakjsborderceutical pipeline. To translate Oxalys laboratory research discoveries into clinical treatments for neurodegenerative disease, she developed the business plans, raised the company’s seed funding, and established collaborations with partners including Atuka, the Michael J Fox Foundation, the National Research Council of Canada, and the Hospital for Sick Children.  She also interfaces Oxalys with patient advocacy groups including the Huntington Society of Canada and the European HD Network.  To advance the company development, she and Joost Schulte have been working with advisory groups including the MIT Venture Mentoring Service, MaRS Discovery District, and the RIC Centre of Mississauga. Katharine was a fellow of the Canadian Institutes of Health Research (CIHR) and the RickHansen Neurotrauma Initiative.  She holds a PhDin neuroscience from the University of British Columbia. </p>
+                <p><b><a href="#">External links!</a></b></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -268,88 +254,7 @@
           <!-- /.modal-dialog --> 
         </div>
         <!-- /.modal --> 
-        
-        <!-- PORTFOLIO IMAGE 2 -->
-        <div class="col-md-4">
-          <div class="grid mask">
-            <figure> <img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt="">
-              <figcaption>
-                <h5>CONCEPT</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-              <!-- /figcaption --> 
-            </figure>
-            <!-- /figure --> 
-          </div>
-          <!-- /grid-mask --> 
-        </div>
-        
-        <!-- PORTFOLIO IMAGE 3 -->
-        <div class="col-md-4">
-          <div class="grid mask">
-            <figure> <img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt="">
-              <figcaption>
-                <h5>UX / UI</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-              <!-- /figcaption --> 
-            </figure>
-            <!-- /figure --> 
-          </div>
-          <!-- /grid-mask --> 
-        </div>
-      </div>
-      <!-- /row --> 
-      
-      <!-- PORTFOLIO IMAGE 4 -->
-      <div class="row">
-        <div class="col-md-4 ">
-          <div class="grid mask">
-            <figure> <img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
-              <figcaption>
-                <h5>CONCEPT</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-              <!-- /figcaption --> 
-            </figure>
-            <!-- /figure --> 
-          </div>
-          <!-- /grid-mask --> 
-        </div>
-        
-        <!-- PORTFOLIO IMAGE 5 -->
-        <div class="col-md-4">
-          <div class="grid mask">
-            <figure> <img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
-              <figcaption>
-                <h5>UX / UI</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-              <!-- /figcaption --> 
-            </figure>
-            <!-- /figure --> 
-          </div>
-          <!-- /grid-mask --> 
-        </div>
-        
-        <!-- PORTFOLIO IMAGE 6 -->
-        <div class="col-md-4">
-          <div class="grid mask">
-            <figure> <img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
-              <figcaption>
-                <h5>CMS INTEGRATION</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-              <!-- /figcaption --> 
-            </figure>
-            <!-- /figure --> 
-          </div>
-          <!-- /grid-mask --> 
-        </div>
-        <!-- /col --> 
-      </div>
-      <!-- /row --> 
-    </div>
-    <!-- /row --> 
-  </div>
-</div>
-<!-- /container --> 
-
+       
 <!-- ==== TEAM MEMBERS ==== -->
 <div id="team" name="team">
   <div class="container">
@@ -359,19 +264,23 @@
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team01.jpg" height="120px" width="120px" alt="">
         <h4><strong>Jessica</strong></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+		<a data-toggle="modal" href="#myModal" class="btn btn-default">Bio</a>
+	 </div>
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team02.jpg" height="120px" width="120px" alt="">
         <h4><b>Mike</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+		<a data-toggle="modal" href="#myModal" class="btn btn-default">Bio</a>
+	  </div>
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team03.jpg" height="120px" width="120px" alt="">
         <h4><b>Michele</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team04.jpg" height="120px" width="120px" alt="">
+		<a data-toggle="modal" href="#myModal" class="btn btn-default">Bio</a>
+      </div>
+	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team04.jpg" height="120px" width="120px" alt="">
         <h4><b>Larry</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+		<a data-toggle="modal" href="#myModal" class="btn btn-default">Bio</a>
+	  </div>
       <div class="col-lg-8 col-lg-offset-2 centered">
         <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
       </div>
@@ -437,13 +346,17 @@
 <div id="footerwrap">
   <div class="container">
     <div class="row">
-      <div class="col-md-8"> <span class="copyright">Copyright &copy; 2015 Your Website Name. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
+      <div class="col-md-8"> 
+		<span class="copyright">Copyright &copy; 2015 Oxalys Pharmaceuticals.</span>
+		<span class="copyright">Original Template Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span>
+	  </div>
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
-          <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
+          <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+          <!--<li><a href="#"><i class="fa fa-facebook"></i></a> </li>-->
+          <!--<li><a href="#"><i class="fa fa-google-plus"></i></a> </li>-->
+          <!--<li><a href="#"><i class="fa fa-linkedin"></i></a> </li>-->
+		  <li>Icons provided by <a href="http://glyphicons.com/">Glyphicons</a></li>
         </ul>
       </div>
     </div>

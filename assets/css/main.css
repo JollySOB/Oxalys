@@ -529,6 +529,10 @@ form div p{
 	outline: 0px;
 }
 
+/* FOOTER*/
+.copyright{
+	display: block;
+}
 
 /* ==========================================================================
    MEDIA QUERIES
