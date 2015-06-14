@@ -20,6 +20,11 @@
 			$currentSlide.prev().addClass("active-slide");
 			$currentSlide = $currentSlide.prev();
 		}
+		
+		//Update home link check for way to remove duplication in right nav later
+		var newHomeLink= "#" + $currentSlide.attr("id");
+		$("#home-link").removeAttr('href');
+		$("#home-link").attr("href", newHomeLink);
 	});
 
 	//Right nav logic
@@ -39,4 +44,11 @@
 			$currentSlide = $currentSlide.next();
 		}
 		
+		//Update home link
+		var newHomeLink= "#" + $currentSlide.attr("id");
+		$("#home-link").removeAttr('href');
+		$("#home-link").attr("href", newHomeLink);
+		
 	});
+	
+	

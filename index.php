@@ -93,10 +93,11 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#home">ALPHA</a> </div>
+        <a class="navbar-brand" href="#home">ALPHA</a> 
+	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home" class="smoothScroll">Home</a></li>
+          <li><a id="home-link" href="#slide1" class="smoothScroll">Home</a></li>
           <li> <a href="#about" class="smoothScroll"> About</a></li>
           <li> <a href="#services" class="smoothScroll"> Services</a></li>
           <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
@@ -113,7 +114,7 @@
 <div id="header">
 	<span id="left-nav" class="glyphicon glyphicon-chevron-left"></span>
 	<span id="right-nav" class="glyphicon glyphicon-chevron-right"></span>
-	<div id="slide1" class="slide active-slide" name="home">
+	<div id="slide1" class="slide active-slide">
 	  <header class="clearfix"> <i class="fa fa-language icon"></i>
 		<h1>Creative & High Quality</h1>
 		<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
