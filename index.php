@@ -111,28 +111,32 @@
 
 <!-- ==== HEADERWRAP ==== -->
 <div id="header">
+	<!--<h1>Oxalys: Huntington's parkinsons therapeutics</h1>-->
 	<span id="left-nav" class="glyphicon glyphicon-chevron-left"></span>
 	<span id="right-nav" class="glyphicon glyphicon-chevron-right"></span>
-	<div id="slide1" class="slide active-slide">
-	  <header class="clearfix"> <i class="fa fa-language icon"></i>
-		<h1>Creative & High Quality</h1>
-		<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
-		  invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
-		<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
+	<div id="slide1" class="slide">
+		<div id="active-content" class="slide-content">
+			<h2>Blah!</h2>
+			<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
+			invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
+			<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
+		</div>
 	</div>
-	<div id="slide2" class="slide" name="">
-	  <header class="clearfix"> <i class="fa fa-language icon"></i>
-		<h1>Creative & High Quality</h1>
+	<div id="slide2" class="slide">
+	  <div class="slide-content">
+		<h2>More Blah!</h2>
 		<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
 		  invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
 		<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
+	  </div>
 	</div>
-	<div id="slide3" class="slide" name="">
-	  <header class="clearfix"> <i class="fa fa-language icon"></i>
-		<h1>Creative & High Quality</h1>
+	<div id="slide3" class="slide">
+	  <div class="slide-content">
+		<h2>Yet More!</h2>
 		<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
 		  invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
 		<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
+	 </div>
 	</div>
 </div>
 <!-- /headerwrap --> 

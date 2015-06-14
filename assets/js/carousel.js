@@ -5,21 +5,26 @@
 
 	//Left nav logic
 	$("#left-nav").click(function() {
-		$currentSlide.removeClass("active-slide");
+		$currentSlide.children().removeClass("active-content");
 		if ($currentSlide.attr("id") == $FIRST_SLIDE.attr("id")) {
 			$currentSlide.fadeOut();
-			$currentSlide.removeClass("active-slide");
+			$currentSlide.children().removeAttr("id");
+			//Why do I need to override an auto-generated (or so it seems) inline style with my own?
+			$currentSlide.children().attr("style", "display: none");
 			$LAST_SLIDE.fadeIn();
-			$LAST_SLIDE.addClass("active-slide");
 			$currentSlide = $LAST_SLIDE;
 		}
 		else {
 			$currentSlide.fadeOut();
-			$currentSlide.removeClass("active-slide");
+			$currentSlide.children().removeAttr("id");
+			$currentSlide.children().attr("style", "display: none");
 			$currentSlide.prev().fadeIn();
-			$currentSlide.prev().addClass("active-slide");
 			$currentSlide = $currentSlide.prev();
 		}
+		
+		//Slide in currently visible content
+		$currentSlide.children().slideDown(1000);
+		$currentSlide.children().attr("id", "active-content");
 		
 		//Update home link check for way to remove duplication in right nav later
 		var newHomeLink= "#" + $currentSlide.attr("id");
@@ -31,18 +36,22 @@
 	$("#right-nav").click(function() {
 		if ($currentSlide.attr("id") == $LAST_SLIDE.attr("id")) {
 			$currentSlide.fadeOut();
-			$currentSlide.removeClass("active-slide");
+			$currentSlide.children().removeAttr("id");
+			$currentSlide.children().attr("style", "display: none");
 			$FIRST_SLIDE.fadeIn();
-			$FIRST_SLIDE.addClass("active-slide");
 			$currentSlide = $FIRST_SLIDE;
 		}
 		else {
 			$currentSlide.fadeOut();
-			$currentSlide.removeClass("active-slide");
 			$currentSlide.next().fadeIn();
-			$currentSlide.next().addClass("active-slide");
+			$currentSlide.children().removeAttr("id");
+			$currentSlide.children().attr("style", "display: none");
 			$currentSlide = $currentSlide.next();
 		}
+		
+		//Slide in currently visible content
+		$currentSlide.children().slideDown(1000);
+		$currentSlide.children().attr("id", "active-content")
 		
 		//Update home link
 		var newHomeLink= "#" + $currentSlide.attr("id");
