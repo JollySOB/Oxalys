@@ -29,7 +29,7 @@
 		
 		else {
 			$response_message = "Thank you, your message has been sent!";
-		
+			//Temp location use the one below once contact form is set up
 			//Send the e-mail.
 			/* $mail = new PHPmailer();
 			//$mail->SMTPDebug = 3;
@@ -45,6 +45,14 @@
 			$mail->Body = $email_body;
 			$mail->addAddress("contactcommunityfund@gmail.com");                                                     
 			$mail->Subject = "User Commentary"; //Maybe add a new input field to the contact form later? */
+			
+			/* if(!$mail->send()) {
+				$response_message = "Error:" . $mail->ErrorInfo;
+			} 
+			
+			else {
+				$response_message = "Thank you, your message has been sent!";
+			} */
 		}
 	}
 ?>
@@ -112,14 +120,14 @@
 		  invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
 		<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
 	</div>
-	<div id="slide2" class="slide" name="home">
+	<div id="slide2" class="slide" name="">
 	  <header class="clearfix"> <i class="fa fa-language icon"></i>
 		<h1>Creative & High Quality</h1>
 		<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
 		  invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
 		<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
 	</div>
-	<div id="slide3" class="slide" name="home">
+	<div id="slide3" class="slide" name="">
 	  <header class="clearfix"> <i class="fa fa-language icon"></i>
 		<h1>Creative & High Quality</h1>
 		<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
@@ -402,24 +410,22 @@
             </div>
           </div>
           <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
-		  <?php
-			if (isset($_POST['name'])) {
-				echo "<br><p>$response_message</p></span>";
-			}
-			//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
-		  ?>
 		  <!--<div class="row"><div class="col-xs-6 col-md-6 form-group"><input id="spam-test" class="form-control" name="spam-test" type="text" placeholder="Your answer here:" required /></div></div>-->
 		  <div class="row">
+			<?php
+				if (isset($_POST['name'])) {
+					echo "<br><p>$response_message</p></span>";
+				}
+				//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
+			?>
 			<div id="spam-honeypot-container" class="col-xs-6 col-md-6 form-group">
 				<input id="spam-honeypot" class="form-control" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!">
 			</div>
+				<button class="btn btn-lg" type="submit">Send Message</button>
 		  </div>
-            <div class="col-xs-12 col-md-12">
-				<button id="contact-button" class="btn btn-lg" type="submit">Send Message</button>
-            </div>
+	</div>
         </form>
         <!-- form --> 
-      </div>
     </div>
     <!-- row --> 
     

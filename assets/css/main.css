@@ -265,18 +265,6 @@ a:before, a:after {
 	color: #ffbf00;
 	margin-bottom: 10px;
 }
-#contact .btn {
-	font-weight: 500;
-	font-size: 18px;
-	margin-top: 1%;
-	background-color: #ffbf00;
-	color: #fff;
-	border: 0;
-}
-#contact .btn:hover, #contact .btn:focus {
-	background-color: #e9af03;
-	outline: 0px;
-}
 #greywrap {
 	background: #f5f5f5;
 	margin-top: 0px;
@@ -513,22 +501,32 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	margin-bottom: 1%;
 }*/
 
+form div p{
+	margin: auto auto 1% auto;
+}
+
 #spam-honeypot-container {
+	display: none;
 	position: relative;
 	left: 50%;
-	margin-top: 2%;
 	margin-left: -173.75px;
 }
 
 #spam-honeypot {
-	display: none;
 	text-align: center;
 }
 
-#contact-button{
-	positition: relative;
-	left: 50%;
-	margin-left: -55.5px;
+#contact .btn {
+	font-weight: 500;
+	font-size: 18px;
+	margin: 5% auto auto auto;
+	background-color: #ffbf00;
+	color: #fff;
+	border: 0;
+}
+#contact .btn:hover, #contact .btn:focus {
+	background-color: #e9af03;
+	outline: 0px;
 }
 
 
