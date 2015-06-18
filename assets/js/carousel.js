@@ -18,7 +18,7 @@
 			$currentSlide.fadeOut();
 			$currentSlide.children().removeAttr("id");
 			$currentSlide.children().attr("style", "display: none");
-			$currentSlide.prev().fadeIn();
+			$currentSlide.prev().fadeIn(600);
 			$currentSlide = $currentSlide.prev();
 		}
 		
@@ -35,15 +35,15 @@
 	//Right nav logic
 	$("#right-nav").click(function() {
 		if ($currentSlide.attr("id") == $LAST_SLIDE.attr("id")) {
-			$currentSlide.fadeOut();
+			$currentSlide.fadeOut(600);
 			$currentSlide.children().removeAttr("id");
 			$currentSlide.children().attr("style", "display: none");
-			$FIRST_SLIDE.fadeIn();
+			$FIRST_SLIDE.fadeIn(600);
 			$currentSlide = $FIRST_SLIDE;
 		}
 		else {
-			$currentSlide.fadeOut();
-			$currentSlide.next().fadeIn();
+			$currentSlide.fadeOut(600);
+			$currentSlide.next().fadeIn(600);
 			$currentSlide.children().removeAttr("id");
 			$currentSlide.children().attr("style", "display: none");
 			$currentSlide = $currentSlide.next();

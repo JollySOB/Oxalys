@@ -5,7 +5,7 @@
 	require_once("PHPMailer/class.smtp.php");
 	
 	//Constants
-	$spam_test_answer = 12;
+	//$spam_test_answer = 12;
 	
 	//Get contact form data
 	if (isset($_POST['name'])) {
@@ -111,7 +111,6 @@
 
 <!-- ==== HEADERWRAP ==== -->
 <div id="header">
-	<!--<h1>Oxalys: Huntington's parkinsons therapeutics</h1>-->
 	<span id="left-nav" class="glyphicon glyphicon-chevron-left"></span>
 	<span id="right-nav" class="glyphicon glyphicon-chevron-right"></span>
 	<div id="slide1" class="slide">
@@ -141,38 +140,6 @@
 </div>
 <!-- /headerwrap --> 
 <!-- Erase this once a better solution is found -->
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <!-- ==== ABOUT ==== -->
 <div id="about" name="about">
   <div class="container">
@@ -364,7 +331,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        <form id="contact" method="post" class="form" role="form">
+        <form id="contact" method="post" action="index.php#contact" class="form" role="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">
               <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
@@ -377,7 +344,7 @@
 		  <!--<div class="row"><div class="col-xs-6 col-md-6 form-group"><input id="spam-test" class="form-control" name="spam-test" type="text" placeholder="Your answer here:" required /></div></div>-->
 		  <div class="row">
 			<?php
-				if (isset($_POST['name'])) {
+				if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					echo "<br><p>$response_message</p></span>";
 				}
 				//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
@@ -401,7 +368,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8"> 
-		<span class="copyright">Copyright &copy; 2015 Oxalys Pharmaceuticals.</span>
+		<span class="copyright">Copyright &copy; 2015 Oxalys Pharmaceuticals</span>
 		<span class="copyright">Original Template Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span>
 	  </div>
       <div class="col-md-4">
@@ -410,7 +377,7 @@
           <!--<li><a href="#"><i class="fa fa-facebook"></i></a> </li>-->
           <!--<li><a href="#"><i class="fa fa-google-plus"></i></a> </li>-->
           <!--<li><a href="#"><i class="fa fa-linkedin"></i></a> </li>-->
-		  <li>Icons provided by <a href="http://glyphicons.com/">Glyphicons</a></li>
+		  <li>Arrow icons by <a href="http://glyphicons.com/">Glyphicons</a></li>
         </ul>
       </div>
     </div>
@@ -424,15 +391,15 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<!--<script type="text/javascript" src="assets/js/retina.js"></script>-->
+<script type="text/javascript" src="assets/js/retina.js"></script>
 <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
 <script type="text/javascript" src="assets/js/jquery-func.js"></script>
 <script type="text/javascript" src="assets/js/interact.js"></script>
 <script type="text/javascript" src="assets/js/carousel.js"></script>
 <?php
-	if (isset($_POST["name"])) {
+	/* if (isset($_POST["name"])) {
 		echo '<script type="text/javascript">window.scrollTo(0,document.body.scrollHeight);</script>';
-	}
+	} */
 ?>
 </body>
 </html>

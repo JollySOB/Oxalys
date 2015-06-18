@@ -441,8 +441,9 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 
 /* === CAROUSEL SLIDES === */
-#carousel{
+#header{
 	position: relative;
+	height: 110%;
 }
 
 .slide {
@@ -497,7 +498,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	z-index: 1;
 }
 
-/*ABOUT SECTION*/
+/* === ABOUT SECTION === */
 #about {
 	background: #fff;
 }
@@ -527,7 +528,7 @@ form div p{
 #contact .btn {
 	font-weight: 500;
 	font-size: 18px;
-	margin: 5% auto auto auto;
+	margin: 1% auto auto auto;
 	background-color: #ffbf00;
 	color: #fff;
 	border: 0;
