@@ -468,7 +468,14 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 .slide .slide-content{
 	display: none;
-} 
+}
+
+.slide .slide-content h2, .slide .slide-content h3{
+	color: white;
+	height: 35%;
+}
+
+
 
 #active-content{
 	display: block;
@@ -484,17 +491,17 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #slide1 {
-	background-image: url(../img/header_bg.jpg);
+	background-image: url(../img/Oxalys.jpg);
 	z-index: 3;
 }
 
 #slide2{
-	background-image: url(../img/MySecretFriend.jpg);
+	background-image: url(../img/MountainPath.jpg);
 	z-index: 2;
 }
 
 #slide3 {
-	background-image: url(../img/FindingNeverland.jpg);
+	background-image: url(../img/Amaryllis.jpg);
 	z-index: 1;
 }
 

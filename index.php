@@ -93,7 +93,7 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#home">ALPHA</a> 
+        <a class="navbar-brand" href="#home"><img src="assets/img/CellCultures.png" alt="Logo"/></a>
 	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -115,26 +115,23 @@
 	<span id="right-nav" class="glyphicon glyphicon-chevron-right"></span>
 	<div id="slide1" class="slide">
 		<div id="active-content" class="slide-content">
-			<h2>Blah!</h2>
-			<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
-			invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
-			<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
+			<h2>Oxalys Pharmaceuticals</h2>
+			<h3>Everyone's Health Matters</h3>
+			<a href="#portfolio" class="smoothScroll btn btn-lg">Learn More</a> </header>
 		</div>
 	</div>
 	<div id="slide2" class="slide">
 	  <div class="slide-content">
-		<h2>More Blah!</h2>
-		<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
-		  invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
-		<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
+		<h2>Intelligent Drug Discovery</h2>
+		<h3>Targeting Causes, Not Symptoms.</h3>
+		<a href="#portfolio" class="smoothScroll btn btn-lg">Learn More</a> </header>
 	  </div>
 	</div>
 	<div id="slide3" class="slide">
 	  <div class="slide-content">
-		<h2>Yet More!</h2>
-		<p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
-		  invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p>
-		<a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
+		<h2>Better Brain Health, For Longer</h2>
+		<h3>Improving Quality Of Life Through Precision Therapeutics</h3>
+		<a href="#portfolio" class="smoothScroll btn btn-lg">Learn More</a> </header>
 	 </div>
 	</div>
 </div>
@@ -373,10 +370,11 @@
 	  </div>
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
-          <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-          <!--<li><a href="#"><i class="fa fa-facebook"></i></a> </li>-->
-          <!--<li><a href="#"><i class="fa fa-google-plus"></i></a> </li>-->
-          <!--<li><a href="#"><i class="fa fa-linkedin"></i></a> </li>-->
+          <li><a href="https://twitter.com/oxalyspharma"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
+		  <br>
 		  <li>Arrow icons by <a href="http://glyphicons.com/">Glyphicons</a></li>
         </ul>
       </div>
