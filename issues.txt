@@ -1,9 +1,7 @@
 Bugs:
--Blip of the first section when scrolling down upon contact form reload. (Fixed by making the contact form destination =index.php#contact, but need to make it scroll all the way to see thank you message.)
 -Safari animations for top section are sluggish.
 -The first iteration through the slideshow, when one goes left, does not have the proper order, nor does the text animate. Why?
 
 -Style:
--Find a way to make the about section stay where it is relative to the image gallery without using excessive line breaks.
 -See about avoiding adding inline style to the slides to make the text re-appear each time.
 -The right chevron in IE appears to be in contact with the scroll bar. Move it (conditionally) so that it is out of the way.
