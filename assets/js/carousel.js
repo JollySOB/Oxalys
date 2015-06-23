@@ -1,12 +1,13 @@
 	//Variable initialization
 	var $FIRST_SLIDE = $("#slide1");
 	var $LAST_SLIDE = $("#slide3");
-	var $currentSlide = $("#slide1");
+	var $currentSlide = $FIRST_SLIDE;
 
 	//Left nav logic
 	$("#left-nav").click(function() {
 		$currentSlide.children().removeClass("active-content");
 		if ($currentSlide.attr("id") == $FIRST_SLIDE.attr("id")) {
+			$currentSlide.next().fadeOut();
 			$currentSlide.fadeOut(600);
 			$currentSlide.children().removeAttr("id");
 			//Why do I need to override an auto-generated (or so it seems) inline style with my own?
