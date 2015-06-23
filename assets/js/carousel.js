@@ -7,11 +7,11 @@
 	$("#left-nav").click(function() {
 		$currentSlide.children().removeClass("active-content");
 		if ($currentSlide.attr("id") == $FIRST_SLIDE.attr("id")) {
-			$currentSlide.fadeOut();
+			$currentSlide.fadeOut(600);
 			$currentSlide.children().removeAttr("id");
 			//Why do I need to override an auto-generated (or so it seems) inline style with my own?
 			$currentSlide.children().attr("style", "display: none");
-			$LAST_SLIDE.fadeIn();
+			$LAST_SLIDE.fadeIn(600);
 			$currentSlide = $LAST_SLIDE;
 		}
 		else {
@@ -59,5 +59,4 @@
 		$("#home-link").attr("href", newHomeLink);
 		
 	});
-	
 	

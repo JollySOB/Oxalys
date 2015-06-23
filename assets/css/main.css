@@ -476,6 +476,10 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 
+/* For the more info links in the carousel slides */
+.more-info{
+	color: white;
+}
 
 #active-content{
 	display: block;
@@ -491,23 +495,31 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #slide1 {
-	background-image: url(../img/Oxalys.jpg);
+	background-image: url(../img/backgrounds/Oxalys.jpg);
 	z-index: 3;
 }
 
 #slide2{
-	background-image: url(../img/MountainPath.jpg);
+	background-image: url(../img/backgrounds/MountainPath.jpg);
 	z-index: 2;
 }
 
 #slide3 {
-	background-image: url(../img/Amaryllis.jpg);
+	background-image: url(../img/backgrounds/Amaryllis.jpg);
 	z-index: 1;
 }
 
 /* === ABOUT SECTION === */
 #about {
 	background: #fff;
+}
+
+
+/* === SERVICES SECTION === */
+#services{
+	background-image: url(../img/backgrounds/Pipette.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 /* === CONTACT FORM === */

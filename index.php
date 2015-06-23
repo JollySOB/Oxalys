@@ -40,9 +40,9 @@
 			$mail->Port = 587;
 			$mail->Username = "contactcommunityfund@gmail.com";
 			$mail->Password = "community693";
-			$mail->From = $sender_email;
-			$mail->FromName = $sender_name;
-			$mail->Body = $email_body;
+			$mail->From = $email;
+			$mail->FromName = $name;
+			$mail->Body = $message;
 			$mail->addAddress("contactcommunityfund@gmail.com");                                                     
 			$mail->Subject = "User Commentary"; //Maybe add a new input field to the contact form later? */
 			
@@ -93,7 +93,7 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#home"><img src="assets/img/CellCultures.png" alt="Logo"/></a>
+        <a class="navbar-brand" href="#home"><img src="assets/img/LogoSmaller.png" alt="Logo"/></a>
 	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -117,21 +117,21 @@
 		<div id="active-content" class="slide-content">
 			<h2>Oxalys Pharmaceuticals</h2>
 			<h3>Everyone's Health Matters</h3>
-			<a href="#portfolio" class="smoothScroll btn btn-lg">Learn More</a> </header>
+			<a href="#about" class="smoothScroll btn btn-lg more-info">Learn More</a> </header>
 		</div>
 	</div>
 	<div id="slide2" class="slide">
 	  <div class="slide-content">
 		<h2>Intelligent Drug Discovery</h2>
 		<h3>Targeting Causes, Not Symptoms.</h3>
-		<a href="#portfolio" class="smoothScroll btn btn-lg">Learn More</a> </header>
+		<a href="#services" class="smoothScroll btn btn-lg more-info">Our Services</a> </header>
 	  </div>
 	</div>
 	<div id="slide3" class="slide">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
-		<h3>Improving Quality Of Life Through Precision Therapeutics</h3>
-		<a href="#portfolio" class="smoothScroll btn btn-lg">Learn More</a> </header>
+		<h3>Via Early Stage Therapeutics</h3>
+		<a href="#team" class="smoothScroll btn btn-lg more-info">Our Team</a> </header>
 	 </div>
 	</div>
 </div>
@@ -143,7 +143,7 @@
     <div class="row white">
       <h2 class="centered">ABOUT US</h2>
       <hr>
-      <div class="col-md-6"> <img class="img-responsive" src="assets/img/about/about1.jpg" align=""> </div>
+      <div class="col-md-6"> <img class="img-responsive" src="assets/img/about/about1.jpg" alt=""> </div>
       <div class="col-md-6">
         <h3>Who we are</h3>
         <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.</p>
@@ -190,7 +190,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Jessica Schmoe</h4>
+                <h4 class="modal-title">Katharine Sepp</h4>
               </div>
               <div class="modal-body">
                 <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
@@ -212,7 +212,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Jessica Schmoe</h4>
+                <h4 class="modal-title">Joost Schulte</h4>
               </div>
               <div class="modal-body">
                 <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
@@ -234,7 +234,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Jessica Schmoe</h4>
+                <h4 class="modal-title">Jean-Marie Vallet</h4>
               </div>
               <div class="modal-body">
                 <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
@@ -256,7 +256,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Jessica Schmoe</h4>
+                <h4 class="modal-title">Mark Rioult</h4>
               </div>
               <div class="modal-body">
                 <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
@@ -279,23 +279,23 @@
     <div class="row centered">
       <h2 class="centered">MEET OUR TEAM</h2>
       <hr>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team01.jpg" height="120px" width="120px" alt="">
-        <h4><strong>Jessica</strong></h4>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/KSThumbnail.jpg" height="120px" width="120px" alt="">
+        <h4><strong>Katharine</strong></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
 		<a data-toggle="modal" href="#modal1" class="btn btn-default">Bio</a>
 	 </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team02.jpg" height="120px" width="120px" alt="">
-        <h4><b>Mike</b></h4>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JSThumbnail.jpg" height="120px" width="120px" alt="">
+        <h4><b>Joost</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
 		<a data-toggle="modal" href="#modal2" class="btn btn-default">Bio</a>
 	  </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team03.jpg" height="120px" width="120px" alt="">
-        <h4><b>Michele</b></h4>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMThumbnail.jpg" height="120px" width="120px" alt="">
+        <h4><b>Jean-Marie</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
 		<a data-toggle="modal" href="#modal3" class="btn btn-default">Bio</a>
       </div>
-	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team04.jpg" height="120px" width="120px" alt="">
-        <h4><b>Larry</b></h4>
+	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/MRThumbnail.jpg" height="120px" width="120px" alt="">
+        <h4><b>Mark</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
 		<a data-toggle="modal" href="#modal4" class="btn btn-default">Bio</a>
 	  </div>
@@ -315,11 +315,11 @@
       <h2 class="centered">CONTACT US</h2>
       <hr>
       <div class="col-md-4 centered"> <i class="fa fa-map-marker fa-2x"></i>
-        <p>321 Awesome Street<br>
-          New York, NY 17022</p>
+        <p>112 College Street - Suite 411<br>
+          Toronto Ontario M5G 1:6</p>
       </div>
       <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-        <p>info@companyname.com</p>
+        <p>info@oxalys.ca</p>
       </div>
       <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
         <p> +1 800 123 1234</p>
@@ -342,7 +342,7 @@
 		  <div class="row">
 			<?php
 				if ($_SERVER['REQUEST_METHOD'] == "POST") {
-					echo "<br><p>$response_message</p></span>";
+					echo "<br><p>$response_message</p>";
 				}
 				//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
 			?>
@@ -375,7 +375,7 @@
           <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
           <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
 		  <br>
-		  <li>Arrow icons by <a href="http://glyphicons.com/">Glyphicons</a></li>
+		  <li>Arrow icons provided by <a href="http://glyphicons.com/">Glyphicons</a></li>
         </ul>
       </div>
     </div>
