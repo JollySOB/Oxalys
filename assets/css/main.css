@@ -439,12 +439,27 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	CUSTOMIZATIONS
    ========================================================================*/
 
-
+/*Rename to header later, and find out why this causes the nav arrows to disappear /*
 /* === CAROUSEL SLIDES === */
 #header{
 	position: relative;
 	height: 110%;
 }
+
+
+/* For the more info links in the carousel slides */
+.more-info{
+	color: white;
+}
+
+.carousel-indicators{
+	margin-bottom: 5%;
+}
+
+.carousel-indicators li:hover{
+	background-color: white;
+}
+
 
 .slide {
 	position: absolute;
@@ -468,17 +483,12 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 .slide .slide-content{
 	display: none;
+	margin-top: 5%;
 }
 
 .slide .slide-content h2, .slide .slide-content h3{
 	color: white;
 	height: 35%;
-}
-
-
-/* For the more info links in the carousel slides */
-.more-info{
-	color: white;
 }
 
 #active-content{
@@ -496,16 +506,19 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 #slide1 {
 	background-image: url(../img/backgrounds/Oxalys.jpg);
+	background-repeat: no-repeat;
 	z-index: 3;
 }
 
 #slide2{
 	background-image: url(../img/backgrounds/MountainPath.jpg);
+	background-repeat: no-repeat;
 	z-index: 2;
 }
 
 #slide3 {
 	background-image: url(../img/backgrounds/Amaryllis.jpg);
+	background-repeat: no-repeat;
 	z-index: 1;
 }
 

@@ -111,8 +111,10 @@
 
 <!-- ==== HEADERWRAP ==== -->
 <div id="header">
+	<!-- Carousel navigation arrows -->
 	<span id="left-nav" class="glyphicon glyphicon-chevron-left"></span>
 	<span id="right-nav" class="glyphicon glyphicon-chevron-right"></span>
+	<!-- Carousel slide content -->
 	<div id="slide1" class="slide">
 		<div id="active-content" class="slide-content">
 			<h2>Oxalys Pharmaceuticals</h2>
@@ -134,9 +136,15 @@
 		<a href="#team" class="smoothScroll btn btn-lg more-info">Our Team</a> </header>
 	 </div>
 	</div>
+	<!-- Carousel indicators -->
+	<ul class="carousel-indicators">
+		<li class="active"></li>
+		<li></li>
+		<li></li>
+	</ul>
 </div>
 <!-- /headerwrap --> 
-<!-- Erase this once a better solution is found -->
+
 <!-- ==== ABOUT ==== -->
 <div id="about" name="about">
   <div class="container">
