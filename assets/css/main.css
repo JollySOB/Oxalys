@@ -456,9 +456,10 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	margin-bottom: 5%;
 }
 
+/* perhaps add switiching functionality to indicators later
 .carousel-indicators li:hover{
 	background-color: white;
-}
+}*/
 
 
 .slide {
@@ -568,6 +569,11 @@ form div p{
 #contact .btn:hover, #contact .btn:focus {
 	background-color: #e9af03;
 	outline: 0px;
+}
+
+/* === MODAL STYLING === */
+.modal img{
+	float: left;
 }
 
 /* === FOOTER === */

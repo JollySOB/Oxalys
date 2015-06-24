@@ -3732,7 +3732,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
-	height: 14.5%;
+	height: 15%;
   }
 }
 .navbar-fixed-top {

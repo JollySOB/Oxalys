@@ -62,7 +62,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Oxalys Blah!">
+<meta name="description" content="Oxalys Pharmaceuticals is developing therapeutics to halt, slow, or
+reverse the progression of neurodegenerative disease">
 <meta name="author" content="Cody Rosevear">
 <title>Oxalys Pharmaceuticals: Huntington's And Parkinson's Disease Therapeutics</title>
 
@@ -132,7 +133,7 @@
 	<div id="slide3" class="slide">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
-		<h3>Via Early Stage Therapeutics</h3>
+		<h3>Targeting Diseases, Not Symptoms</h3>
 		<a href="#team" class="smoothScroll btn btn-lg more-info">Our Team</a> </header>
 	 </div>
 	</div>
@@ -201,9 +202,8 @@
                 <h4 class="modal-title">Katharine Sepp</h4>
               </div>
               <div class="modal-body">
-                <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
-                <p> Katharine co-founded Oxalys Pharmaceuticals as a progression of her research on neuroscience and drug discovery at MIT andHarvard Medical School.  She has been a collaborator with Oxalys Co-Founder Joost Schulte for over 15 years. She has developed novel drug discovery assays for disease-modification of neurodegenerative disorders. These assays have led to the development of the Oxalys pharmakjsborderceutical pipeline. To translate Oxalys laboratory research discoveries into clinical treatments for neurodegenerative disease, she developed the business plans, raised the company’s seed funding, and established collaborations with partners including Atuka, the Michael J Fox Foundation, the National Research Council of Canada, and the Hospital for Sick Children.  She also interfaces Oxalys with patient advocacy groups including the Huntington Society of Canada and the European HD Network.  To advance the company development, she and Joost Schulte have been working with advisory groups including the MIT Venture Mentoring Service, MaRS Discovery District, and the RIC Centre of Mississauga. Katharine was a fellow of the Canadian Institutes of Health Research (CIHR) and the RickHansen Neurotrauma Initiative.  She holds a PhDin neuroscience from the University of British Columbia. </p>
-                <p><b><a href="#">External links!</a></b></p>
+                <p><img class="img-responsive" src="assets/img/team/KSPhotoBorder.jpg" alt="Katharine Sepp Photo"></p>
+                <p>Dr. Katharine Sepp co-founded Oxalys Pharmaceuticals as a result of her breakthrough discoveries at MIT and Harvard Medical School.  She is deeply committed to developing neurodegeneration therapies that positively transform the lives of patients and their families.  To translate applied neurodegeneration research discoveries into clinical treatments for neurodegenerative disease, she developed the business plans, raised the company’s seed funding, and established collaborations with partners including Atuka, the Michael J Fox Foundation, the National Research Council of Canada, and the Hospital for Sick Children.  For Oxalys business development, she entered the company into the CTA@Boston accelerator at the Cambridge Innovation Center, sponsored by the Canada Consulate of Boston, and working closely with the Canadian Entrepreneurs of New England.  She also connects Oxalys with patient advocacy groups including the Huntington Society of Canada and the European HD Network.  Dr. Sepp was a fellow of the Canadian Institutes of Health Research (CIHR) and the Rick Hansen Neurotrauma Initiative.  She holds a PhD in neuroscience from the University of British Columbia. </p> 
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -223,8 +223,8 @@
                 <h4 class="modal-title">Joost Schulte</h4>
               </div>
               <div class="modal-body">
-                <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
-                <p>Blah</p>
+                <p><img class="img-responsive" src="assets/img/team/JSPhotoBorder.jpg" alt="Jooste Schulte Photo"></p>
+                <p>Dr. Joost Schulte is a neuroscientist with 20 years experience, and prior to co-founding Oxalys he has been active in neurodegeneration pharmaceutical R&D in both academic and industrial settings.  As a research scientist at EnVivo Pharmaceuticals (Cambridge, MA), he developed novel assays for therapeutics screening in Huntington’s, Parkinson’s and Alzheimer’s disease models, leading to the company’s first patented IP.   He then developed a Huntington’s disease high-content drug discovery platform at MIT and the Broad Institute in Cambridge, MA. The platform was applied to screening libraries at the Harvard Medical School DRSC and ICCB-L to discover the Oxalys pipeline therapeutics.  He has worked with the Harvard Catalyst Program in Translational Medicine and the European Huntington’s Disease Network to develop the clinical trial protocols for Oxalys’ Huntington’s disease upcoming clinical trial.  He holds a PhD in neuroscience from the University of British Columbia and carried out his postdoctoral research at MIT.  Dr. Schulte has been supported by the Rick Hansen Neurotrauma Initiative, National Science and Engineering Research Council (NSERC) and the Ontario Brain Institute/Ontario Centres of Excellence.</p>
                 <p><b><a href="#">External links!</a></b></p>
               </div>
               <div class="modal-footer">
@@ -245,8 +245,8 @@
                 <h4 class="modal-title">Jean-Marie Vallet</h4>
               </div>
               <div class="modal-body">
-                <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
-                <p>Blah</p>
+                <p><img class="img-responsive" src="assets/img/team/JMVPhotoBorder.jpg" alt="Jean-Marie Vallet Photo"></p>
+                <p>Dr. Jean-Marie Vallet is a French-American life sciences executive with more than 30 years of experience in various roles, including R&D, sales & marketing, administration, corporate development and licensing.  He started as a genetic engineer at Battelle Institute in 1985 after obtaining his Ph.D. in Molecular Biology and joined the pharmaceutical industry after obtaining his MBA in 1988.  Starting in Europe (Switzerland, France, and Germany), he relocated to the US in 1994 for a senior corporate business development position with Warner Lambert.  Passionate for innovation and entrepreneurship, he left the world of “Big Pharmas” for the biotech industry with Guilford Pharmaceuticals in 2002 and with EnVivo Pharmaceuticals in 2006, both specialized in neurosciences.  JM retired in 2011 from EnVivo to start Cyrma Ventures LLC, a small consulting firm providing corporate development and financing services to emerging life science companies.  Since 2007, Dr. Vallet is an Advisor to the French Government for Trade and Commerce and an active mentor of several European biotech companies expanding their business in the US (NETVA, Venture Leaders YEi).  Jean-Marie is a board member of four emerging companies: HepatoChem, Ogenx, Ronoc Patent, and Oxalys, and a member of the LaunchPad Venture Group, a Boston group of angel investors, since 2011.  He is also a co-founder of Innovate-America, a mini-fund designed to support ground-breaking protein technology from MIT.</p>
                 <p><b><a href="#">External links!</a></b></p>
               </div>
               <div class="modal-footer">
@@ -267,8 +267,8 @@
                 <h4 class="modal-title">Mark Rioult</h4>
               </div>
               <div class="modal-body">
-                <!--<p><img class="img-responsive" src="assets/img/FindingNeverland.jpg" alt=""></p> -->
-                <p>Blah!</p>
+                <p><img class="img-responsive" src="assets/img/team/MRPhotoBorder.jpg" alt="Mark Rioult Photo"></p>
+                <p>Dr. Marc Rioult has been involved in the development of technologies and technology-based companies, in the creation of startups, and in technology acquisition and commercialization for over twelve years. Working mainly in the life and medical sciences, he has also experience in nanotechnologies, electronics, software, chemicals, microfluidics, and consumer products.  He is currently Managing Director at 3DM Inc, the US subsidiary of the 3DM Group, Japan, and is doing business development in the US and in Europe. Prior to this, he was a Technology Licensing Officer at MIT where he managed and developed a portfolio of inventions, IP, licenses, and facilitated the creation of over ten startups. Before joining MIT, he worked consecutively for two consulting firms engaged in IP and technology transactions for enterprises ranging from global Fortune 500 clients to startups. Prior to this, he co-led a small software company for two years after having left academic research in neuroscience.  Dr. Rioult has a PhD in neuroscience and an MS in biology and biomedical engineering from the Federal Institute of Technology (ETH) in Zurich, and an MBA from the executive MBA program at Boston University. He has published and lectured internationally on scientific and business topics and has co-organized two international scientific symposiums.</p>
                 <p><b><a href="#">External links!</a></b></p>
               </div>
               <div class="modal-footer">
@@ -288,27 +288,27 @@
       <h2 class="centered">MEET OUR TEAM</h2>
       <hr>
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/KSThumbnail.jpg" height="120px" width="120px" alt="">
-        <h4><strong>Katharine</strong></h4>
-        <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <h4><strong>Dr Katharine Sepp, PhD</strong></h4>
+        <p>Chief Executive Officer & Co-founder</p>
 		<a data-toggle="modal" href="#modal1" class="btn btn-default">Bio</a>
 	 </div>
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JSThumbnail.jpg" height="120px" width="120px" alt="">
-        <h4><b>Joost</b></h4>
-        <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <h4><b>Joost Shulte, PhD</b></h4>
+        <p>Chief Scientific Officer & Co-founder</p>
 		<a data-toggle="modal" href="#modal2" class="btn btn-default">Bio</a>
 	  </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMThumbnail.jpg" height="120px" width="120px" alt="">
-        <h4><b>Jean-Marie</b></h4>
-        <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMVThumbnail.jpg" height="120px" width="120px" alt="">
+        <h4><b>Jean-Marie Vallet, MBA, PhD</b></h4>
+        <p>Director</p>
 		<a data-toggle="modal" href="#modal3" class="btn btn-default">Bio</a>
       </div>
 	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/MRThumbnail.jpg" height="120px" width="120px" alt="">
-        <h4><b>Mark</b></h4>
-        <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <h4><b>Mark Rioult, MBA, PhD</b></h4>
+        <p>Director</p>
 		<a data-toggle="modal" href="#modal4" class="btn btn-default">Bio</a>
 	  </div>
       <div class="col-lg-8 col-lg-offset-2 centered">
-        <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        <p class="large">The Oxalys team has a shared passion for developing truly effective therapies for neurodegenerative disease.  We combine our diverse talents and experience to create breakthrough solutions through constructive collaboration. </p>
       </div>
     </div>
   </div>
@@ -379,7 +379,7 @@
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
           <li><a href="https://twitter.com/oxalyspharma"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCg3a0elR1aO_6-eQfJuCC2g"><i class="fa fa-youtube"></i></a></li>
           <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
           <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
 		  <br>

@@ -7,8 +7,7 @@
 	var $LAST_INDICATOR = $(".carousel-indicators li:last-child");
 	var $currentIndicator = $FIRST_INDICATOR;
 
-	//Left nav logic
-	$("#left-nav").click(function() {
+	var left_nav_logic = function() {
 		
 		//Remove the active tags for the previous slide
 		$currentSlide.children().removeClass("active-content");
@@ -43,10 +42,9 @@
 		var newHomeLink= "#" + $currentSlide.attr("id");
 		$("#home-link").removeAttr('href');
 		$("#home-link").attr("href", newHomeLink);
-	});
-
-	//Right nav logic
-	$("#right-nav").click(function() {
+	}
+	
+	var right_nav_logic = function() {
 	
 		$currentIndicator.removeClass("active");
 	
@@ -78,5 +76,8 @@
 		$("#home-link").removeAttr('href');
 		$("#home-link").attr("href", newHomeLink);
 		
-	});
+	}
+	
+	$("#left-nav").click(left_nav_logic);
+	$("#right-nav").click(right_nav_logic);
 	
