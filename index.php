@@ -123,9 +123,10 @@ reverse the progression of neurodegenerative disease">
 			<a href="#about" class="smoothScroll btn btn-lg more-info">Learn More</a> </header>
 		</div>
 	</div>
-	<div id="slide2" class="slide">
+	<!-- TODO: FIX THE STYLE HACK BELOW -->
+	<div id="slide2" class="slide" style="display: none">
 	  <div class="slide-content">
-		<h2>Intelligent Drug Discovery</h2>
+		<strong><h2>Intelligent Drug Discovery</h2></strong>
 		<h3>Targeting Causes, Not Symptoms.</h3>
 		<a href="#services" class="smoothScroll btn btn-lg more-info">Our Services</a> </header>
 	  </div>
@@ -134,14 +135,14 @@ reverse the progression of neurodegenerative disease">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
 		<h3>Targeting Diseases, Not Symptoms</h3>
-		<a href="#team" class="smoothScroll btn btn-lg more-info">Our Team</a> </header>
+		<a href="#team" class="smoothScroll btn btn-lg more-info">Our Team</a></header>
 	 </div>
 	</div>
 	<!-- Carousel indicators -->
 	<ul class="carousel-indicators">
-		<li class="active"></li>
-		<li></li>
-		<li></li>
+		<li id="s1indicator" class="active"></li>
+		<li id="s2indicator"></li>
+		<li id="s3indicator"></li>
 	</ul>
 </div>
 <!-- /headerwrap --> 
@@ -202,7 +203,7 @@ reverse the progression of neurodegenerative disease">
                 <h4 class="modal-title">Katharine Sepp</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/team/KSPhotoBorder.jpg" alt="Katharine Sepp Photo"></p>
+                <p><img class="img-responsive" src="assets/img/team/KSThumbnail.jpg" alt="Katharine Sepp Photo"></p>
                 <p>Dr. Katharine Sepp co-founded Oxalys Pharmaceuticals as a result of her breakthrough discoveries at MIT and Harvard Medical School.  She is deeply committed to developing neurodegeneration therapies that positively transform the lives of patients and their families.  To translate applied neurodegeneration research discoveries into clinical treatments for neurodegenerative disease, she developed the business plans, raised the company’s seed funding, and established collaborations with partners including Atuka, the Michael J Fox Foundation, the National Research Council of Canada, and the Hospital for Sick Children.  For Oxalys business development, she entered the company into the CTA@Boston accelerator at the Cambridge Innovation Center, sponsored by the Canada Consulate of Boston, and working closely with the Canadian Entrepreneurs of New England.  She also connects Oxalys with patient advocacy groups including the Huntington Society of Canada and the European HD Network.  Dr. Sepp was a fellow of the Canadian Institutes of Health Research (CIHR) and the Rick Hansen Neurotrauma Initiative.  She holds a PhD in neuroscience from the University of British Columbia. </p> 
               </div>
               <div class="modal-footer">
@@ -223,9 +224,8 @@ reverse the progression of neurodegenerative disease">
                 <h4 class="modal-title">Joost Schulte</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/team/JSPhotoBorder.jpg" alt="Jooste Schulte Photo"></p>
+                <p><img class="img-responsive" src="assets/img/team/JSThumbnail.jpg" alt="Jooste Schulte Photo"></p>
                 <p>Dr. Joost Schulte is a neuroscientist with 20 years experience, and prior to co-founding Oxalys he has been active in neurodegeneration pharmaceutical R&D in both academic and industrial settings.  As a research scientist at EnVivo Pharmaceuticals (Cambridge, MA), he developed novel assays for therapeutics screening in Huntington’s, Parkinson’s and Alzheimer’s disease models, leading to the company’s first patented IP.   He then developed a Huntington’s disease high-content drug discovery platform at MIT and the Broad Institute in Cambridge, MA. The platform was applied to screening libraries at the Harvard Medical School DRSC and ICCB-L to discover the Oxalys pipeline therapeutics.  He has worked with the Harvard Catalyst Program in Translational Medicine and the European Huntington’s Disease Network to develop the clinical trial protocols for Oxalys’ Huntington’s disease upcoming clinical trial.  He holds a PhD in neuroscience from the University of British Columbia and carried out his postdoctoral research at MIT.  Dr. Schulte has been supported by the Rick Hansen Neurotrauma Initiative, National Science and Engineering Research Council (NSERC) and the Ontario Brain Institute/Ontario Centres of Excellence.</p>
-                <p><b><a href="#">External links!</a></b></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -245,7 +245,7 @@ reverse the progression of neurodegenerative disease">
                 <h4 class="modal-title">Jean-Marie Vallet</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/team/JMVPhotoBorder.jpg" alt="Jean-Marie Vallet Photo"></p>
+                <p><img class="img-responsive" src="assets/img/team/JMVThumbnail.jpg" alt="Jean-Marie Vallet Photo"></p>
                 <p>Dr. Jean-Marie Vallet is a French-American life sciences executive with more than 30 years of experience in various roles, including R&D, sales & marketing, administration, corporate development and licensing.  He started as a genetic engineer at Battelle Institute in 1985 after obtaining his Ph.D. in Molecular Biology and joined the pharmaceutical industry after obtaining his MBA in 1988.  Starting in Europe (Switzerland, France, and Germany), he relocated to the US in 1994 for a senior corporate business development position with Warner Lambert.  Passionate for innovation and entrepreneurship, he left the world of “Big Pharmas” for the biotech industry with Guilford Pharmaceuticals in 2002 and with EnVivo Pharmaceuticals in 2006, both specialized in neurosciences.  JM retired in 2011 from EnVivo to start Cyrma Ventures LLC, a small consulting firm providing corporate development and financing services to emerging life science companies.  Since 2007, Dr. Vallet is an Advisor to the French Government for Trade and Commerce and an active mentor of several European biotech companies expanding their business in the US (NETVA, Venture Leaders YEi).  Jean-Marie is a board member of four emerging companies: HepatoChem, Ogenx, Ronoc Patent, and Oxalys, and a member of the LaunchPad Venture Group, a Boston group of angel investors, since 2011.  He is also a co-founder of Innovate-America, a mini-fund designed to support ground-breaking protein technology from MIT.</p>
                 <p><b><a href="#">External links!</a></b></p>
               </div>
@@ -267,7 +267,7 @@ reverse the progression of neurodegenerative disease">
                 <h4 class="modal-title">Mark Rioult</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/team/MRPhotoBorder.jpg" alt="Mark Rioult Photo"></p>
+                <p><img class="img-responsive" src="assets/img/team/MRThumbnail.jpg" alt="Mark Rioult Photo"></p>
                 <p>Dr. Marc Rioult has been involved in the development of technologies and technology-based companies, in the creation of startups, and in technology acquisition and commercialization for over twelve years. Working mainly in the life and medical sciences, he has also experience in nanotechnologies, electronics, software, chemicals, microfluidics, and consumer products.  He is currently Managing Director at 3DM Inc, the US subsidiary of the 3DM Group, Japan, and is doing business development in the US and in Europe. Prior to this, he was a Technology Licensing Officer at MIT where he managed and developed a portfolio of inventions, IP, licenses, and facilitated the creation of over ten startups. Before joining MIT, he worked consecutively for two consulting firms engaged in IP and technology transactions for enterprises ranging from global Fortune 500 clients to startups. Prior to this, he co-led a small software company for two years after having left academic research in neuroscience.  Dr. Rioult has a PhD in neuroscience and an MS in biology and biomedical engineering from the Federal Institute of Technology (ETH) in Zurich, and an MBA from the executive MBA program at Boston University. He has published and lectured internationally on scientific and business topics and has co-organized two international scientific symposiums.</p>
                 <p><b><a href="#">External links!</a></b></p>
               </div>
@@ -288,7 +288,7 @@ reverse the progression of neurodegenerative disease">
       <h2 class="centered">MEET OUR TEAM</h2>
       <hr>
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/KSThumbnail.jpg" height="120px" width="120px" alt="">
-        <h4><strong>Dr Katharine Sepp, PhD</strong></h4>
+        <h4><strong>Katharine Sepp, PhD</strong></h4>
         <p>Chief Executive Officer & Co-founder</p>
 		<a data-toggle="modal" href="#modal1" class="btn btn-default">Bio</a>
 	 </div>
@@ -323,8 +323,8 @@ reverse the progression of neurodegenerative disease">
       <h2 class="centered">CONTACT US</h2>
       <hr>
       <div class="col-md-4 centered"> <i class="fa fa-map-marker fa-2x"></i>
-        <p>112 College Street - Suite 411<br>
-          Toronto Ontario M5G 1:6</p>
+        <a href="https://www.google.ca/maps/place/112+College+St,+University+of+Toronto+-+St.+George+Campus,+Toronto,+ON+M5G+1L6/@43.6603996,-79.389428,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34b7c6a387e9:0xf6ed00694e7c9c93"><p>112 College Street - Suite 411<br>
+          Toronto Ontario M5G 1L6</p></a>
       </div>
       <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
         <p>info@oxalys.ca</p>
@@ -354,10 +354,10 @@ reverse the progression of neurodegenerative disease">
 				}
 				//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
 			?>
-			<div id="spam-honeypot-container" class="col-xs-6 col-md-6 form-group">
-				<input id="spam-honeypot" class="form-control" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!">
-			</div>
 				<button class="btn btn-lg" type="submit">Send Message</button>
+				<div id="spam-honeypot-container" class="col-xs-6 col-md-6 form-group">
+					<input id="spam-honeypot" class="form-control" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!">
+				</div>
 		  </div>
 	</div>
         </form>
@@ -397,15 +397,10 @@ reverse the progression of neurodegenerative disease">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/retina.js"></script>
-<script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-<script type="text/javascript" src="assets/js/jquery-func.js"></script>
-<script type="text/javascript" src="assets/js/interact.js"></script>
+<!--<script type="text/javascript" src="assets/js/retina.js"></script>-->
+<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script> 
+<script type="text/javascript" src="assets/js/jquery-func.min.js"></script>
+<script type="text/javascript" src="assets/js/interact.min.js"></script>
 <script type="text/javascript" src="assets/js/carousel.js"></script>
-<?php
-	/* if (isset($_POST["name"])) {
-		echo '<script type="text/javascript">window.scrollTo(0,document.body.scrollHeight);</script>';
-	} */
-?>
 </body>
 </html>
