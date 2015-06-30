@@ -1,9 +1,7 @@
 <?php
 	
 	//Third party library for sending e-mail.
-	//require_once("PHPMailer/class.phpmailer.php");
 	require_once("PHPMailer/PHPMailerAutoload.php");
-	//require_once("PHPMailer/class.smtp.php");
 	
 	//Constants
 	//$spam_test_answer = 12;
