@@ -38,7 +38,7 @@
 			$mail->Host = "smtp.live.com";
 			$mail->Port = 25;
 			$mail->Username = "bungalo1@hotmail.com";
-			$mail->Password = "coledy6!#$"; 
+			$mail->Password = ""; 
 			$mail->From = $sender_email;
 			$mail->FromName = $sender_name;
 			$mail->Body = $sender_message;
@@ -92,7 +92,7 @@ reverse the progression of neurodegenerative diseases">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#home"><img src="assets/img/LogoSmaller.png" alt="Logo"/></a>
+        <a class="navbar-brand smoothScroll" href="#header"><img src="assets/img/LogoSmaller.png" alt="Logo"/></a>
 	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -133,7 +133,7 @@ reverse the progression of neurodegenerative diseases">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
 		<h3>Targeting Diseases, Not Symptoms</h3>
-		<a href="#team" class="smoothScroll btn btn-lg more-info">Our Team</a></header>
+		<a href="#therapeutics" class="smoothScroll btn btn-lg more-info">Our Therapeutics</a></header>
 	 </div>
 	</div>
 	<!-- Carousel indicators -->
@@ -181,7 +181,7 @@ reverse the progression of neurodegenerative diseases">
 <div id="therapeutics" name="therapeutics">
 	<div class="container">
 		<div class="row">
-			<h2 class="centered">OUR TECHNOLOGY</h2>
+			<h2 class="centered">OUR THERAPEUTICS</h2>
 			<p>Our therapeutics are developed to treat disease progression, not just symptoms. These ‘neuroprotective’ compounds inhibit biological processes that accelerate brain aging.  In this way, brain health and function can be retained longer. Our most advanced pipeline therapeutic, OXD4, is highly neuroprotective in preclinical tests, and is applicable to multiple neurodegenerative diseases.  We are developing it first for Huntington’s disease, which represents the fastest route to clinical use.  Applications to additional disorders, such as Parkinson’s disease will closely follow.</p>
 		</div>
 	</div>
@@ -392,9 +392,9 @@ reverse the progression of neurodegenerative diseases">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <!--<script type="text/javascript" src="assets/js/retina.js"></script>-->
-<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script> 
-<script type="text/javascript" src="assets/js/jquery-func.min.js"></script>
-<script type="text/javascript" src="assets/js/interact.min.js"></script>
+<<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
+<!--<script type="text/javascript" src="assets/js/jquery-func.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/js/interact.min.js"></script>-->
 <script type="text/javascript" src="assets/js/carousel.js"></script>
 </body>
 </html>
