@@ -302,7 +302,7 @@ reverse the progression of neurodegenerative diseases">
 		<a data-toggle="modal" href="#modal4" class="btn btn-default">Bio</a>
 	  </div>
       <div class="col-lg-8 col-lg-offset-2 centered">
-        <p class="large">The Oxalys team has a shared passion for developing truly effective therapies for neurodegenerative disease.  We combine our diverse talents and experience to create breakthrough solutions through constructive collaboration. </p>
+        <p class="large">The Oxalys team has a shared passion for developing truly effective therapies for neurodegenerative disease.  We combine our diverse talents and experience to create breakthrough solutions through constructive collaboration.</p>
       </div>
     </div>
   </div>
@@ -315,7 +315,7 @@ reverse the progression of neurodegenerative diseases">
   <div class="container">
     <div class="row">
       <h2 class="centered">CONTACT US</h2>
-		<div class="wrapper">
+		<div class="wrapper1">
 		  <div class="col-md-4"> 
 			<i class="fa fa-map-marker fa-2x"></i>
 			<a href="https://www.google.ca/maps/place/112+College+St,+University+of+Toronto+-+St.+George+Campus,+Toronto,+ON+M5G+1L6/@43.6603996,-79.389428,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34b7c6a387e9:0xf6ed00694e7c9c93"><p>112 College Street - Suite 411<br>
@@ -329,7 +329,7 @@ reverse the progression of neurodegenerative diseases">
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered">
-        <p>Blah!</p>
+        <p>INSERT WORDS HERE</p>
         <form id="contact" method="post" action="index.php#contact" class="form" role="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">
