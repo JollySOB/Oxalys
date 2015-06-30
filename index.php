@@ -169,7 +169,7 @@ reverse the progression of neurodegenerative diseases">
     <div class="row">
       <h2 class="centered">OUR SERVICES</h2>
       <div class="col-lg-8 col-lg-offset-2">
-        <p class="large">Our drug discovery technology enables us to seek cures for neurodegenerative disease. We replicate the genetic triggers of neurodegeneration in cultured neuronal cells, and identify compounds that reverse the disease process. This process is rapid and efficient: we are able to test thousands of compounds at a time in a miniaturized format. We offer this drug discovery service to academic and industry partners on a contract basis. Contact us for inquiries.</p>
+        <p class="large">Our drug discovery technology enables us to seek cures for neurodegenerative disease. We replicate the genetic triggers of neurodegeneration in cultured neuronal cells, and identify compounds that reverse the disease process. This process is rapid and efficient: we are able to test thousands of compounds at a time in a miniaturized format. We offer this drug discovery service to academic and industry partners on a contract basis. <a class="smoothScroll" href="#contact">Contact us</a> for inquiries.</p>
       </div>
     <!-- row --> 
   </div>
