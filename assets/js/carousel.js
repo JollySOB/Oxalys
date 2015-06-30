@@ -1,5 +1,5 @@
 	//Variable initialization and constants
-	//$ prefix denotes a JQuery object
+	// the $ prefix denotes a JQuery object
 	var $FIRST_SLIDE = $("#slide1");
 	var $LAST_SLIDE = $("#slide3");
 	var $FIRST_INDICATOR = $(".carousel-indicators li:first-child");
@@ -25,7 +25,6 @@
 		currentSlide.children().attr("style", "display: none");
 	}
 	
-	//TODO: extract sub functions from these
 	var left_nav_logic = function() {
 		
 		$currentIndicator.removeClass("active");
@@ -90,6 +89,7 @@
 		var $destinationSlide = $("#slide" + $(this).attr("id").charAt(CAROUSEL_INDICATOR_SLIDE_ID_INDEX));
 		$currentSlide.fadeOut(600);
 		$destinationSlide.fadeIn(600);
+		
 		clearPrevContent($currentSlide);
 		$currentSlide = $destinationSlide; 
 		slideContent($currentSlide);

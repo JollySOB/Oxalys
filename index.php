@@ -1,17 +1,18 @@
 <?php
 	
 	//Third party library for sending e-mail.
-	require_once("PHPMailer/class.phpmailer.php");
-	require_once("PHPMailer/class.smtp.php");
+	//require_once("PHPMailer/class.phpmailer.php");
+	require_once("PHPMailer/PHPMailerAutoload.php");
+	//require_once("PHPMailer/class.smtp.php");
 	
 	//Constants
 	//$spam_test_answer = 12;
 	
 	//Get contact form data
 	if (isset($_POST['name'])) {
-		$name = trim($_POST['name']);
-		$email = trim($_POST['email']);
-		$message = trim($_POST['message']);
+		$sender_name = trim($_POST['name']);
+		$sender_email = trim($_POST['email']);
+		$sender_message = trim($_POST['message']);
 		
 		
 		//Validate user input
@@ -23,36 +24,35 @@
 			$response_message = "Please make sure to correctly answer the question below!";
 		} */
 		
-		else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		else if (!filter_var($sender_email, FILTER_VALIDATE_EMAIL)) {
 			$response_message = "Please ensure that you have provided a valid e-mail address!";
 		}
 		
 		else {
-			$response_message = "Thank you, your message has been sent!";
-			//Temp location use the one below once contact form is set up
-			//Send the e-mail.
-			/* $mail = new PHPmailer();
-			//$mail->SMTPDebug = 3;
+			//Sendmail does not seem to work on windows?
+			//Try using the PHP mail funtion to send email from the web server itself. Might need to confidugre php.ini in order for mail() to work. 
+			//If that does not work, use smpt server belowtry smtp servers.
+			$mail = new PHPmailer();
+			$mail->SMTPDebug = 0;
 			$mail->IsSMTP();    
-			$mail->SMTPAuth = true;
+			$mail->SMTPAuth = True;
 			$mail->SMTPSecure = 'tls';
-			$mail->Host = "smtp.gmail.com";
-			$mail->Port = 587;
-			$mail->Username = "contactcommunityfund@gmail.com";
-			$mail->Password = "community693";
-			$mail->From = $email;
-			$mail->FromName = $name;
-			$mail->Body = $message;
-			$mail->addAddress("contactcommunityfund@gmail.com");                                                     
-			$mail->Subject = "User Commentary"; //Maybe add a new input field to the contact form later? */
+			$mail->Host = "smtp.live.com";
+			$mail->Port = 25;
+			$mail->Username = "bungalo1@hotmail.com";
+			$mail->Password = "coledy6!#$"; 
+			$mail->From = $sender_email;
+			$mail->FromName = $sender_name;
+			$mail->Body = $sender_message;
+			$mail->addAddress("contactcommunityfund@gmail.com");
 			
-			/* if(!$mail->send()) {
+			if(!$mail->send()) {
 				$response_message = "Error:" . $mail->ErrorInfo;
 			} 
 			
 			else {
 				$response_message = "Thank you, your message has been sent!";
-			} */
+			}
 		}
 	}
 ?>
@@ -63,7 +63,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Oxalys Pharmaceuticals is developing therapeutics to halt, slow, or
-reverse the progression of neurodegenerative disease">
+reverse the progression of neurodegenerative diseases">
 <meta name="author" content="Cody Rosevear">
 <title>Oxalys Pharmaceuticals: Huntington's And Parkinson's Disease Therapeutics</title>
 
@@ -131,7 +131,7 @@ reverse the progression of neurodegenerative disease">
 		<a href="#services" class="smoothScroll btn btn-lg more-info">Our Services</a> </header>
 	  </div>
 	</div>
-	<div id="slide3" class="slide">
+	<div id="slide3" class="slide" style="display: none">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
 		<h3>Targeting Diseases, Not Symptoms</h3>
@@ -152,13 +152,12 @@ reverse the progression of neurodegenerative disease">
   <div class="container">
     <div class="row white">
       <h2 class="centered">ABOUT US</h2>
-      <hr>
       <div class="col-md-6"> <img class="img-responsive" src="assets/img/about/about1.jpg" alt=""> </div>
       <div class="col-md-6">
+        <h3>Everyone's Health Matters</h3>
+        <p>At Oxalys Pharmaceuticals, we believe that everyone should be able to access truly effective therapies for brain health.  This includes people with rare genetic or age-related neurodegenerative disorders.  We aim to develop therapies that are simple to administer, and that can halt, slow, or reverse the course of brain degeneration.</p>
         <h3>Who we are</h3>
-        <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.</p>
-        <h3>Why choose us?</h3>
-        <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel.</p>
+        <p>Oxalys was founded by scientists passionate for brain health.  Our drug discovery methods and first pipeline therapeutics originated from research at the Massachusetts Institute of Technology (MIT).  We work collaboratively with global industry experts and leaders in neurology to develop breakthrough and transformative therapies.  Our drug development has been supported by the Michael J Fox Foundation and the National Research Council of Canada.</p>
       </div>
     </div>
     <!-- row --> 
@@ -171,27 +170,24 @@ reverse the progression of neurodegenerative disease">
   <div class="container">
     <div class="row">
       <h2 class="centered">OUR SERVICES</h2>
-      <hr>
       <div class="col-lg-8 col-lg-offset-2">
-        <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        <p class="large">Our drug discovery technology enables us to seek cures for neurodegenerative disease. We replicate the genetic triggers of neurodegeneration in cultured neuronal cells, and identify compounds that reverse the disease process. This process is rapid and efficient: we are able to test thousands of compounds at a time in a miniaturized format. We offer this drug discovery service to academic and industry partners on a contract basis. Contact us for inquiries.</p>
       </div>
-      <div class="col-lg-4 callout"> <i class="fa fa-desktop fa-3x"></i>
-        <h3>Responsive Design</h3>
-        <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
-      </div>
-      <div class="col-lg-4 callout"> <i class="fa fa-gears fa-3x"></i>
-        <h3>Web Development</h3>
-        <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
-      </div>
-      <div class="col-lg-4 callout"> <i class="fa fa-dot-circle-o fa-3x"></i>
-        <h3>Social Marketing</h3>
-        <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
-      </div>
-    </div>
     <!-- row --> 
   </div>
 </div>
+</div>
 <!-- container --> 
+
+<!-- === THERAPEUTICS INFO === -->
+<div id="therapeutics" name="therapeutics">
+	<div class="container">
+		<div class="row">
+			<h2 class="centered">OUR TECHNOLOGY</h2>
+			<p>Our therapeutics are developed to treat disease progression, not just symptoms. These ‘neuroprotective’ compounds inhibit biological processes that accelerate brain aging.  In this way, brain health and function can be retained longer. Our most advanced pipeline therapeutic, OXD4, is highly neuroprotective in preclinical tests, and is applicable to multiple neurodegenerative diseases.  We are developing it first for Huntington’s disease, which represents the fastest route to clinical use.  Applications to additional disorders, such as Parkinson’s disease will closely follow.</p>
+		</div>
+	</div>
+</div>
 
 <!-- ===== MODAL WINDOWS FOR TEAM BIOGRAPHIES ===== -->
               
@@ -204,7 +200,7 @@ reverse the progression of neurodegenerative disease">
               </div>
               <div class="modal-body">
                 <p><img class="img-responsive" src="assets/img/team/KSThumbnail.jpg" alt="Katharine Sepp Photo"></p>
-                <p>Dr. Katharine Sepp co-founded Oxalys Pharmaceuticals as a result of her breakthrough discoveries at MIT and Harvard Medical School.  She is deeply committed to developing neurodegeneration therapies that positively transform the lives of patients and their families.  To translate applied neurodegeneration research discoveries into clinical treatments for neurodegenerative disease, she developed the business plans, raised the company’s seed funding, and established collaborations with partners including Atuka, the Michael J Fox Foundation, the National Research Council of Canada, and the Hospital for Sick Children.  For Oxalys business development, she entered the company into the CTA@Boston accelerator at the Cambridge Innovation Center, sponsored by the Canada Consulate of Boston, and working closely with the Canadian Entrepreneurs of New England.  She also connects Oxalys with patient advocacy groups including the Huntington Society of Canada and the European HD Network.  Dr. Sepp was a fellow of the Canadian Institutes of Health Research (CIHR) and the Rick Hansen Neurotrauma Initiative.  She holds a PhD in neuroscience from the University of British Columbia. </p> 
+                <p>Dr. Katharine Sepp co-founded Oxalys Pharmaceuticals as a result of her breakthrough discoveries at MIT and Harvard Medical School.  She is deeply committed to developing neurodegeneration therapies that positively transform the lives of patients and their families.  To translate applied neurodegeneration research discoveries into clinical treatments for neurodegenerative disease, she developed the business plans, raised the company’s seed funding, and established collaborations with partners including Atuka, the Michael J Fox Foundation, the National Research Council of Canada, and the Hospital for Sick Children.  For Oxalys business development, she entered the company into the CTA@Boston accelerator at the Cambridge Innovation Center, sponsored by the Canada Consulate of Boston, and working closely with the Canadian Entrepreneurs of New England.  She also connects Oxalys with patient advocacy groups including the Huntington Society of Canada and the European HD Network.  Dr. Sepp was a fellow of the Canadian Institutes of Health Research (CIHR) and the Rick Hansen Neurotrauma Initiative.  She holds a PhD in neuroscience from the University of British Columbia.</p> 
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -247,7 +243,7 @@ reverse the progression of neurodegenerative disease">
               <div class="modal-body">
                 <p><img class="img-responsive" src="assets/img/team/JMVThumbnail.jpg" alt="Jean-Marie Vallet Photo"></p>
                 <p>Dr. Jean-Marie Vallet is a French-American life sciences executive with more than 30 years of experience in various roles, including R&D, sales & marketing, administration, corporate development and licensing.  He started as a genetic engineer at Battelle Institute in 1985 after obtaining his Ph.D. in Molecular Biology and joined the pharmaceutical industry after obtaining his MBA in 1988.  Starting in Europe (Switzerland, France, and Germany), he relocated to the US in 1994 for a senior corporate business development position with Warner Lambert.  Passionate for innovation and entrepreneurship, he left the world of “Big Pharmas” for the biotech industry with Guilford Pharmaceuticals in 2002 and with EnVivo Pharmaceuticals in 2006, both specialized in neurosciences.  JM retired in 2011 from EnVivo to start Cyrma Ventures LLC, a small consulting firm providing corporate development and financing services to emerging life science companies.  Since 2007, Dr. Vallet is an Advisor to the French Government for Trade and Commerce and an active mentor of several European biotech companies expanding their business in the US (NETVA, Venture Leaders YEi).  Jean-Marie is a board member of four emerging companies: HepatoChem, Ogenx, Ronoc Patent, and Oxalys, and a member of the LaunchPad Venture Group, a Boston group of angel investors, since 2011.  He is also a co-founder of Innovate-America, a mini-fund designed to support ground-breaking protein technology from MIT.</p>
-                <p><b><a href="#">External links!</a></b></p>
+                <!--<p><b><a href="https://www.linkedin.com/in/jmvallet1">LinkedIn</a></b></p>-->
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -285,7 +281,7 @@ reverse the progression of neurodegenerative disease">
 <div id="team" name="team">
   <div class="container">
     <div class="row centered">
-      <h2 class="centered">MEET OUR TEAM</h2>
+      <h2 class="centered">OUR TEAM</h2>
       <hr>
       <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/KSThumbnail.jpg" height="120px" width="120px" alt="">
         <h4><strong>Katharine Sepp, PhD</strong></h4>
@@ -321,21 +317,21 @@ reverse the progression of neurodegenerative disease">
   <div class="container">
     <div class="row">
       <h2 class="centered">CONTACT US</h2>
-      <hr>
-      <div class="col-md-4 centered"> <i class="fa fa-map-marker fa-2x"></i>
-        <a href="https://www.google.ca/maps/place/112+College+St,+University+of+Toronto+-+St.+George+Campus,+Toronto,+ON+M5G+1L6/@43.6603996,-79.389428,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34b7c6a387e9:0xf6ed00694e7c9c93"><p>112 College Street - Suite 411<br>
-          Toronto Ontario M5G 1L6</p></a>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-        <p>info@oxalys.ca</p>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-        <p> +1 800 123 1234</p>
-      </div>
+		<div class="wrapper">
+		  <div class="col-md-4"> 
+			<i class="fa fa-map-marker fa-2x"></i>
+			<a href="https://www.google.ca/maps/place/112+College+St,+University+of+Toronto+-+St.+George+Campus,+Toronto,+ON+M5G+1L6/@43.6603996,-79.389428,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34b7c6a387e9:0xf6ed00694e7c9c93"><p>112 College Street - Suite 411<br>
+			  Toronto Ontario M5G 1L6</p></a>
+		  </div>
+		  <div class="col-md-4"> 
+			<i class="fa fa-envelope-o fa-2x"></i>
+			<p>info@oxalys.ca</p>
+		  </div>
+		</div>
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        <p>Blah!</p>
         <form id="contact" method="post" action="index.php#contact" class="form" role="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">

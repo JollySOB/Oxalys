@@ -506,6 +506,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 #slide1 {
 	background-image: url(../img/backgrounds/Oxalys.jpg);
 	background-repeat: no-repeat;
+	background-size: auto auto;
 	z-index: 3;
 }
 
@@ -523,11 +524,18 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 /* === ABOUT SECTION === */
 #about {
-	background: #fff;
+	background-color: #F2F2F3;
+	margin-top: -2.5%;
+}
+
+/* === THERAPEUTICS SECTION === */
+
+#therapeutics{
+	background-color: #F2F2F3;
 }
 
 
-/* === SERVICES SECTION === */
+/* === SERVICES === */
 #services{
 	background-image: url(../img/backgrounds/Pipette.jpg);
 	background-repeat: no-repeat;
@@ -540,7 +548,15 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	margin-bottom: 0.5%;
 }
 
-/* === CONTACT FORM === */
+.modal p{
+	text-align: left;
+}
+
+.modal img{
+	float: left;
+}
+
+/* === CONTACT === */
 /*#spam-test {
 	position: relative;
 	left: 50%;
@@ -579,9 +595,10 @@ form div p{
 	color: black;
 }
 
-/* === MODAL STYLING === */
-.modal img{
-	float: left;
+/* TO DO: center this mathematically */
+#contact .wrapper{
+	position: relative;
+	left: 17%;
 }
 
 /* === FOOTER === */
