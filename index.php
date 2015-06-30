@@ -96,7 +96,7 @@ reverse the progression of neurodegenerative diseases">
 	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a id="home-link" href="#slide1" class="smoothScroll">Home</a></li>
+          <li><a id="home-link" href="#header" class="smoothScroll">Home</a></li>
           <li> <a href="#about" class="smoothScroll"> About</a></li>
           <li> <a href="#services" class="smoothScroll"> Services</a></li>
           <li> <a href="#team" class="smoothScroll"> Team</a></li>
