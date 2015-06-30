@@ -315,7 +315,6 @@ reverse the progression of neurodegenerative diseases">
   <div class="container">
     <div class="row">
       <h2 class="centered">CONTACT US</h2>
-		<div class="wrapper1">
 		  <div class="col-md-4"> 
 			<i class="fa fa-map-marker fa-2x"></i>
 			<a href="https://www.google.ca/maps/place/112+College+St,+University+of+Toronto+-+St.+George+Campus,+Toronto,+ON+M5G+1L6/@43.6603996,-79.389428,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34b7c6a387e9:0xf6ed00694e7c9c93"><p>112 College Street - Suite 411<br>
@@ -325,7 +324,6 @@ reverse the progression of neurodegenerative diseases">
 			<i class="fa fa-envelope-o fa-2x"></i>
 			<p>info@oxalys.ca</p>
 		  </div>
-		</div>
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered">

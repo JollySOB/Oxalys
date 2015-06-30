@@ -595,8 +595,7 @@ form div p{
 	color: black;
 }
 
-/* TO DO: center this mathematically */
-#contact .wrapper1{
+#contact .col-md-4{
 	position: relative;
 	left: 17%;
 }
