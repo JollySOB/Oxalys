@@ -38,7 +38,7 @@
 			$mail->Host = "smtp.live.com";
 			$mail->Port = 25;
 			$mail->Username = "bungalo1@hotmail.com";
-			$mail->Password = "coledy6!#$"; 
+			$mail->Password = ""; 
 			$mail->From = $sender_email;
 			$mail->FromName = $sender_name;
 			$mail->Body = $sender_message;
