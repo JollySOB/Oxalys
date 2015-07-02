@@ -8,13 +8,6 @@
 	var $currentSlide = $FIRST_SLIDE;
 	var $currentIndicator = $FIRST_INDICATOR;
 	
-	//Functions
-	var updateHomeLink = function(currentSlide) {
-			var newHomeLink= "#" + currentSlide.attr("id");
-			$("#home-link").removeAttr('href');
-			$("#home-link").attr("href", newHomeLink);
-		}
-	
 	var slideContent = function(currentSlide) {
 		currentSlide.children().slideDown(1000);
 		currentSlide.children().attr("id", "active-content");
@@ -50,7 +43,6 @@
 		}
 		
 		slideContent($currentSlide);
-		updateHomeLink($currentSlide);
 	}
 	
 	var right_nav_logic = function() {
@@ -75,9 +67,7 @@
 			$currentIndicator = $currentIndicator.next();
 		}
 		
-		slideContent($currentSlide);
-		updateHomeLink($currentSlide);
-		
+		slideContent($currentSlide);	
 	}
 	
 	//Carousel arrow click event handlers
@@ -93,7 +83,6 @@
 		clearPrevContent($currentSlide);
 		$currentSlide = $destinationSlide; 
 		slideContent($currentSlide);
-		updateHomeLink($currentSlide);
 		
 		$currentIndicator.removeClass("active");
 		$(this).addClass("active");

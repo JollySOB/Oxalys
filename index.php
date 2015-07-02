@@ -32,13 +32,13 @@
 			//If that does not work, use smpt server belowtry smtp servers.
 			$mail = new PHPmailer();
 			$mail->SMTPDebug = 0;
-			$mail->IsSMTP();    
+			/* $mail->IsSMTP();    
 			$mail->SMTPAuth = True;
 			$mail->SMTPSecure = 'tls';
 			$mail->Host = "smtp.live.com";
 			$mail->Port = 25;
 			$mail->Username = "bungalo1@hotmail.com";
-			$mail->Password = ""; 
+			$mail->Password = "";  */
 			$mail->From = $sender_email;
 			$mail->FromName = $sender_name;
 			$mail->Body = $sender_message;
@@ -327,7 +327,12 @@ reverse the progression of neurodegenerative diseases">
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered">
-        <p>INSERT WORDS HERE</p>
+        <?php
+				if ($_SERVER['REQUEST_METHOD'] == "POST") {
+					echo "<p>$response_message</p>";
+				}
+				//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
+			?>
         <form id="contact" method="post" action="index.php#contact" class="form" role="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">
@@ -340,12 +345,6 @@ reverse the progression of neurodegenerative diseases">
           <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
 		  <!--<div class="row"><div class="col-xs-6 col-md-6 form-group"><input id="spam-test" class="form-control" name="spam-test" type="text" placeholder="Your answer here:" required /></div></div>-->
 		  <div class="row">
-			<?php
-				if ($_SERVER['REQUEST_METHOD'] == "POST") {
-					echo "<br><p>$response_message</p>";
-				}
-				//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
-			?>
 				<button class="btn btn-lg" type="submit">Send Message</button>
 				<div id="spam-honeypot-container" class="col-xs-6 col-md-6 form-group">
 					<input id="spam-honeypot" class="form-control" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!">
