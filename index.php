@@ -65,16 +65,22 @@ reverse the progression of neurodegenerative diseases">
 <meta name="author" content="Cody Rosevear">
 <title>Oxalys Pharmaceuticals: Huntington's And Parkinson's Disease Therapeutics</title>
 
-<!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
+<!-- Core CSS -->
+<link href="assets/css/styles.min.css" rel="stylesheet">
 
-<!-- Custom CSS -->
-<link href="assets/css/main.css" rel="stylesheet">
+<!-- Fonts -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-<!-- <link href="assets/css/animate-custom.css" rel="stylesheet"> -->
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+<!-- Javascript via CDN-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<!-- Local fall backs for scripts in case of CDN outage -->
+<script>if (!window.jQuery) {document.write('<script src="assets/js/jquery.min.js"><\/script>');}</script>
+<script>if (!window.jQuery) {document.write('<script src="assets/js/jquery.easing.min.js"><\/script>');}</script>
+<script>if (!window.jQuery) {document.write('<script src="assets/js/jquery-ui.min.js"><\/script>');}</script>
 
 <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -95,7 +101,7 @@ reverse the progression of neurodegenerative diseases">
 	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a id="home-link" href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#header" class="smoothScroll">Home</a></li>
           <li> <a href="#about" class="smoothScroll"> About</a></li>
           <li> <a href="#services" class="smoothScroll"> Services</a></li>
           <li> <a href="#team" class="smoothScroll"> Team</a></li>
@@ -117,7 +123,7 @@ reverse the progression of neurodegenerative diseases">
 		<div id="active-content" class="slide-content">
 			<h2>Oxalys Pharmaceuticals</h2>
 			<h3>Everyone's Health Matters</h3>
-			<a href="#about" class="smoothScroll btn btn-lg more-info">Learn More</a> </header>
+			<a href="#about" class="smoothScroll btn btn-lg more-info">Learn More</a>
 		</div>
 	</div>
 	<!-- TODO: FIX THE STYLE HACK BELOW -->
@@ -125,14 +131,14 @@ reverse the progression of neurodegenerative diseases">
 	  <div class="slide-content">
 		<strong><h2>Intelligent Drug Discovery</h2></strong>
 		<h3>Targeting Causes, Not Symptoms.</h3>
-		<a href="#services" class="smoothScroll btn btn-lg more-info">Our Services</a> </header>
+		<a href="#services" class="smoothScroll btn btn-lg more-info">Our Services</a>
 	  </div>
 	</div>
 	<div id="slide3" class="slide" style="display: none">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
 		<h3>Targeting Diseases, Not Symptoms</h3>
-		<a href="#therapeutics" class="smoothScroll btn btn-lg more-info">Our Therapeutics</a></header>
+		<a href="#therapeutics" class="smoothScroll btn btn-lg more-info">Our Therapeutics</a>
 	 </div>
 	</div>
 	<!-- Carousel indicators -->
@@ -379,18 +385,11 @@ reverse the progression of neurodegenerative diseases">
     </div>
   </div>
 </div>
-
-<!-- Bootstrap core JavaScript
-    ================================================== --> 
-<!-- Placed at the end of the document so the pages load faster --> 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+ 
+<!-- Scripts placed at the end of the document so that the pages load faster --> 
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<!--<script type="text/javascript" src="assets/js/retina.js"></script>-->
-<<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
-<!--<script type="text/javascript" src="assets/js/jquery-func.min.js"></script>-->
-<!--<script type="text/javascript" src="assets/js/interact.min.js"></script>-->
+<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
 <script type="text/javascript" src="assets/js/carousel.js"></script>
 </body>
 </html>
