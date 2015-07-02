@@ -7,6 +7,7 @@
 	var CAROUSEL_INDICATOR_SLIDE_ID_INDEX = 1;
 	var $currentSlide = $FIRST_SLIDE;
 	var $currentIndicator = $FIRST_INDICATOR;
+	var FADE_SPEED = 1000;
 	
 	var slideContent = function(currentSlide) {
 		currentSlide.children().slideDown(1000);
@@ -24,19 +25,19 @@
 		
 		//Left navigation edge case
 		if ($currentSlide.attr("id") == $FIRST_SLIDE.attr("id")) {
-			$currentSlide.next().fadeOut();
-			$currentSlide.fadeOut(600);
+			$currentSlide.next().fadeOut(100);
+			$currentSlide.fadeOut(FADE_SPEED);
 			//Why do I need to override an auto-generated (or so it seems) inline style with my own?
 			clearPrevContent($currentSlide);
-			$LAST_SLIDE.fadeIn(600);
+			$LAST_SLIDE.fadeIn(FADE_SPEED);
 			$currentSlide = $LAST_SLIDE;
 			$LAST_INDICATOR.addClass("active");
 			$currentIndicator = $LAST_INDICATOR;
 		}
 		else {
-			$currentSlide.fadeOut(600);
+			$currentSlide.prev().fadeIn(FADE_SPEED);
+			$currentSlide.fadeOut(FADE_SPEED);
 			clearPrevContent($currentSlide);
-			$currentSlide.prev().fadeIn(600);
 			$currentSlide = $currentSlide.prev();
 			$currentIndicator.prev().addClass("active");
 			$currentIndicator = $currentIndicator.prev();
@@ -51,16 +52,16 @@
 	
 		//Right navigation edge case
 		if ($currentSlide.attr("id") == $LAST_SLIDE.attr("id")) {
-			$currentSlide.fadeOut(600);
+			$FIRST_SLIDE.fadeIn(FADE_SPEED);
+			$currentSlide.fadeOut(FADE_SPEED);
 			clearPrevContent($currentSlide);
-			$FIRST_SLIDE.fadeIn(600);
 			$currentSlide = $FIRST_SLIDE;
 			$FIRST_INDICATOR.addClass("active");
 			$currentIndicator = $FIRST_INDICATOR;
 		}
 		else {
-			$currentSlide.fadeOut(600);
-			$currentSlide.next().fadeIn(600);
+			$currentSlide.next().fadeIn(FADE_SPEED);
+			$currentSlide.fadeOut(FADE_SPEED);
 			clearPrevContent($currentSlide);
 			$currentSlide = $currentSlide.next();
 			$currentIndicator.next().addClass("active");
@@ -77,15 +78,17 @@
 	//Logic for switching slides via carousel indicators
 	$(".carousel-indicators li").click(function() {
 		var $destinationSlide = $("#slide" + $(this).attr("id").charAt(CAROUSEL_INDICATOR_SLIDE_ID_INDEX));
-		$currentSlide.fadeOut(600);
-		$destinationSlide.fadeIn(600);
-		
-		clearPrevContent($currentSlide);
-		$currentSlide = $destinationSlide; 
-		slideContent($currentSlide);
-		
-		$currentIndicator.removeClass("active");
-		$(this).addClass("active");
-		$currentIndicator = $(this);
+		if (!$(this).hasClass('active')) {
+			$currentSlide.fadeOut(FADE_SPEED);
+			$destinationSlide.fadeIn(FADE_SPEED);
+			
+			clearPrevContent($currentSlide);
+			$currentSlide = $destinationSlide; 
+			slideContent($currentSlide);
+			
+			$currentIndicator.removeClass("active");
+			$(this).addClass("active");
+			$currentIndicator = $(this);
+		}
 	})
 	
