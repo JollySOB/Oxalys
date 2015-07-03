@@ -6373,11 +6373,16 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	opacity: 0.25;
 }
 
+/*TO DO: add necessary vendor prefixes for background stuff*/
 #slide1 {
 	background-image: url(../img/backgrounds/Oxalys.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 3;
+}
+
+#slide1 h3{
+	color: white;
 }
 
 #slide2{
@@ -6516,4 +6521,7 @@ body .header {
 	position: static;
 }
 
+.navbar-inverse .navbar-nav > li > a{
+	color: white;
+}
 }
