@@ -6376,8 +6376,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 /*TO DO: add necessary vendor prefixes for background stuff*/
 #slide1 {
 	background-image: url(../img/backgrounds/Oxalys.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 	z-index: 3;
 }
 
@@ -6387,15 +6385,11 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 #slide2{
 	background-image: url(../img/backgrounds/MountainPath.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 	z-index: 2;
 }
 
 #slide3 {
 	background-image: url(../img/backgrounds/Amaryllis.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 	z-index: 1;
 }
 
