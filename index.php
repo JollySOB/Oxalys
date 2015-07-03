@@ -352,7 +352,7 @@ reverse the progression of neurodegenerative diseases">
 		  <div class="row">
 				<button class="btn btn-lg" type="submit">Send Message</button>
 				<div id="spam-honeypot-container" class="col-xs-6 col-md-6 form-group">
-					<input id="spam-honeypot" class="form-control" name="spam-honeypot" type="text" placeholder="PLEASE LEAVE THIS FIELD BLANK!!!">
+					<input id="spam-honeypot" class="form-control" name="spam-honeypot" type="text" placeholder="LEAVE BLANK!!!">
 				</div>
 		  </div>
 	</div>
@@ -390,6 +390,7 @@ reverse the progression of neurodegenerative diseases">
 <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
+<!-- TODO: MINIFY CAROUSEL.JS -->
 <script type="text/javascript" src="assets/js/carousel.js"></script>
 </body>
 </html>
