@@ -6386,7 +6386,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #header #left-nav, #header #right-nav{
-	margin-top: 270px;
+	margin-top: 250px;
 	display: inline;
 }
 
@@ -6523,31 +6523,37 @@ body .header {
 }
 
 @media screen and (max-width:769px) {
-#headerwrap h1 {
-	font-size: 80px;
-}
-#headerwrap p {
-	font-size: 30px;
-	line-height: 38px;
+	#headerwrap h1 {
+		font-size: 80px;
+	}
+	#headerwrap p {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	#contact .col-md-4{
+		position: static;
+	}
+
+	.navbar-inverse{
+		height: 145px;
+	}
+
+	.navbar-inverse .navbar-nav > li > a{
+		color: black;
+	}
+
+	.navbar-inverse .navbar-nav > li > a:hover{
+		color: #778899;
+	}
+
+	.in, .collapsing{
+		margin-top: 50px;
+	}
 }
 
-#contact .col-md-4{
-	position: static;
-}
-
-.navbar-inverse{
-	height: 145px;
-}
-
-.navbar-inverse .navbar-nav > li > a{
-	color: black;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover{
-	color: #778899;
-}
-
-.in, .collapsing{
-	margin-top: 50px;
-}
+@media screen and (max-width:328px) {
+	.in, .collapsing{
+		margin-top: 65px;
+	}
 }
