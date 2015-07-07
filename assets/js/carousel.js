@@ -5,9 +5,10 @@
 	var $FIRST_INDICATOR = $(".carousel-indicators li:first-child");
 	var $LAST_INDICATOR = $(".carousel-indicators li:last-child");
 	var CAROUSEL_INDICATOR_SLIDE_ID_INDEX = 1;
+	var FADE_SPEED = 1000;
+	var FIRST_ITERATION = 1;
 	var $currentSlide = $FIRST_SLIDE;
 	var $currentIndicator = $FIRST_INDICATOR;
-	var FADE_SPEED = 1000;
 	
 	var slideContent = function(currentSlide) {
 		currentSlide.children().slideDown(1000);
@@ -16,6 +17,7 @@
 	
 	var clearPrevContent = function(currentSlide) {
 		currentSlide.children().removeAttr("id");
+		//To override auto generated block display style
 		currentSlide.children().attr("style", "display: none");
 	}
 	
@@ -27,7 +29,6 @@
 		if ($currentSlide.attr("id") == $FIRST_SLIDE.attr("id")) {
 			$currentSlide.next().fadeOut(100);
 			$currentSlide.fadeOut(FADE_SPEED);
-			//Why do I need to override an auto-generated (or so it seems) inline style with my own?
 			clearPrevContent($currentSlide);
 			$LAST_SLIDE.fadeIn(FADE_SPEED);
 			$currentSlide = $LAST_SLIDE;
@@ -74,11 +75,17 @@
 	//Carousel arrow click event handlers
 	$("#left-nav").click(left_nav_logic);
 	$("#right-nav").click(right_nav_logic);
+	$("#right-nav-ie").click(right_nav_logic);
 	
 	//Logic for switching slides via carousel indicators
 	$(".carousel-indicators li").click(function() {
 		var $destinationSlide = $("#slide" + $(this).attr("id").charAt(CAROUSEL_INDICATOR_SLIDE_ID_INDEX));
 		if (!$(this).hasClass('active')) {
+			//Try to find a better solution when I have time
+			if (FIRST_ITERATION == 1) {
+				$("#slide2").attr("style", "display: none");
+				FIRST_ITERATION = 0;
+			}
 			$currentSlide.fadeOut(FADE_SPEED);
 			$destinationSlide.fadeIn(FADE_SPEED);
 			

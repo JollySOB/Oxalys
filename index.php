@@ -1,5 +1,5 @@
+<!-- Script to process the contact form -->
 <?php
-	
 	//Third party library for sending e-mail.
 	require_once("PHPMailer/PHPMailerAutoload.php");
 	
@@ -126,7 +126,6 @@ reverse the progression of neurodegenerative diseases">
 			<a href="#about" class="smoothScroll btn btn-lg more-info">Learn More</a>
 		</div>
 	</div>
-	<!-- TODO: FIX THE STYLE HACK BELOW -->
 	<div id="slide2" class="slide" style="display: none">
 	  <div class="slide-content">
 		<strong><h2>Intelligent Drug Discovery</h2></strong>
