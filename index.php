@@ -1,11 +1,9 @@
+<!DOCTYPE HTML>
 <!-- Script to process the contact form -->
 <?php
 	//Third party library for sending e-mail.
 	require_once("PHPMailer/PHPMailerAutoload.php");
-	
-	//Constants
-	//$spam_test_answer = 12;
-	
+
 	//Get contact form data
 	if (isset($_POST['name'])) {
 		$sender_name = trim($_POST['name']);
@@ -55,7 +53,6 @@
 	}
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -128,7 +125,7 @@ reverse the progression of neurodegenerative diseases">
 	</div>
 	<div id="slide2" class="slide">
 	  <div class="slide-content">
-		<strong><h2>Intelligent Drug Discovery</h2></strong>
+		<h2>Intelligent Drug Discovery</h2>
 		<h3>Targeting Causes, Not Symptoms.</h3>
 		<a href="#services" class="smoothScroll btn btn-lg more-info">Our Services</a>
 	  </div>
@@ -150,7 +147,7 @@ reverse the progression of neurodegenerative diseases">
 <!-- /headerwrap --> 
 
 <!-- ==== ABOUT ==== -->
-<div id="about" name="about">
+<div id="about">
   <div class="container">
     <div class="row white">
       <h2 class="centered">ABOUT US</h2>
@@ -168,7 +165,7 @@ reverse the progression of neurodegenerative diseases">
 <!-- container --> 
 
 <!-- ==== SERVICES ==== -->
-<div id="services" name="services">
+<div id="services">
   <div class="container">
     <div class="row">
       <h2 class="centered">OUR SERVICES</h2>
@@ -182,7 +179,7 @@ reverse the progression of neurodegenerative diseases">
 <!-- container --> 
 
 <!-- === THERAPEUTICS INFO === -->
-<div id="therapeutics" name="therapeutics">
+<div id="therapeutics">
 	<div class="container">
 		<div class="row">
 			<h2 class="centered">OUR THERAPEUTICS</h2>
@@ -193,7 +190,7 @@ reverse the progression of neurodegenerative diseases">
 
 <!-- ===== MODAL WINDOWS FOR TEAM BIOGRAPHIES ===== -->
               
-        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -214,7 +211,7 @@ reverse the progression of neurodegenerative diseases">
         </div>
         <!-- /.modal --> 
        
-	   <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	   <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -223,7 +220,7 @@ reverse the progression of neurodegenerative diseases">
               </div>
               <div class="modal-body">
                 <p><img class="img-responsive" src="assets/img/team/JSThumbnail.jpg" alt="Jooste Schulte Photo"></p>
-                <p>Dr. Joost Schulte is a neuroscientist with 20 years experience, and prior to co-founding Oxalys he has been active in neurodegeneration pharmaceutical R&D in both academic and industrial settings.  As a research scientist at EnVivo Pharmaceuticals (Cambridge, MA), he developed novel assays for therapeutics screening in Huntington’s, Parkinson’s and Alzheimer’s disease models, leading to the company’s first patented IP.   He then developed a Huntington’s disease high-content drug discovery platform at MIT and the Broad Institute in Cambridge, MA. The platform was applied to screening libraries at the Harvard Medical School DRSC and ICCB-L to discover the Oxalys pipeline therapeutics.  He has worked with the Harvard Catalyst Program in Translational Medicine and the European Huntington’s Disease Network to develop the clinical trial protocols for Oxalys’ Huntington’s disease upcoming clinical trial.  He holds a PhD in neuroscience from the University of British Columbia and carried out his postdoctoral research at MIT.  Dr. Schulte has been supported by the Rick Hansen Neurotrauma Initiative, National Science and Engineering Research Council (NSERC) and the Ontario Brain Institute/Ontario Centres of Excellence.</p>
+                <p>Dr. Joost Schulte is a neuroscientist with 20 years experience, and prior to co-founding Oxalys he has been active in neurodegeneration pharmaceutical R and D in both academic and industrial settings.  As a research scientist at EnVivo Pharmaceuticals (Cambridge, MA), he developed novel assays for therapeutics screening in Huntington’s, Parkinson’s and Alzheimer’s disease models, leading to the company’s first patented IP.   He then developed a Huntington’s disease high-content drug discovery platform at MIT and the Broad Institute in Cambridge, MA. The platform was applied to screening libraries at the Harvard Medical School DRSC and ICCB-L to discover the Oxalys pipeline therapeutics.  He has worked with the Harvard Catalyst Program in Translational Medicine and the European Huntington’s Disease Network to develop the clinical trial protocols for Oxalys’ Huntington’s disease upcoming clinical trial.  He holds a PhD in neuroscience from the University of British Columbia and carried out his postdoctoral research at MIT.  Dr. Schulte has been supported by the Rick Hansen Neurotrauma Initiative, National Science and Engineering Research Council (NSERC) and the Ontario Brain Institute/Ontario Centres of Excellence.</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -235,7 +232,7 @@ reverse the progression of neurodegenerative diseases">
         </div>
         <!-- /.modal --> 
 		
-		<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -244,7 +241,7 @@ reverse the progression of neurodegenerative diseases">
               </div>
               <div class="modal-body">
                 <p><img class="img-responsive" src="assets/img/team/JMVThumbnail.jpg" alt="Jean-Marie Vallet Photo"></p>
-                <p>Dr. Jean-Marie Vallet is a French-American life sciences executive with more than 30 years of experience in various roles, including R&D, sales & marketing, administration, corporate development and licensing.  He started as a genetic engineer at Battelle Institute in 1985 after obtaining his Ph.D. in Molecular Biology and joined the pharmaceutical industry after obtaining his MBA in 1988.  Starting in Europe (Switzerland, France, and Germany), he relocated to the US in 1994 for a senior corporate business development position with Warner Lambert.  Passionate for innovation and entrepreneurship, he left the world of “Big Pharmas” for the biotech industry with Guilford Pharmaceuticals in 2002 and with EnVivo Pharmaceuticals in 2006, both specialized in neurosciences.  JM retired in 2011 from EnVivo to start Cyrma Ventures LLC, a small consulting firm providing corporate development and financing services to emerging life science companies.  Since 2007, Dr. Vallet is an Advisor to the French Government for Trade and Commerce and an active mentor of several European biotech companies expanding their business in the US (NETVA, Venture Leaders YEi).  Jean-Marie is a board member of four emerging companies: HepatoChem, Ogenx, Ronoc Patent, and Oxalys, and a member of the LaunchPad Venture Group, a Boston group of angel investors, since 2011.  He is also a co-founder of Innovate-America, a mini-fund designed to support ground-breaking protein technology from MIT.</p>
+                <p>Dr. Jean-Marie Vallet is a French-American life sciences executive with more than 30 years of experience in various roles, including R and D, sales & marketing, administration, corporate development and licensing.  He started as a genetic engineer at Battelle Institute in 1985 after obtaining his Ph.D. in Molecular Biology and joined the pharmaceutical industry after obtaining his MBA in 1988.  Starting in Europe (Switzerland, France, and Germany), he relocated to the US in 1994 for a senior corporate business development position with Warner Lambert.  Passionate for innovation and entrepreneurship, he left the world of “Big Pharmas” for the biotech industry with Guilford Pharmaceuticals in 2002 and with EnVivo Pharmaceuticals in 2006, both specialized in neurosciences.  JM retired in 2011 from EnVivo to start Cyrma Ventures LLC, a small consulting firm providing corporate development and financing services to emerging life science companies.  Since 2007, Dr. Vallet is an Advisor to the French Government for Trade and Commerce and an active mentor of several European biotech companies expanding their business in the US (NETVA, Venture Leaders YEi).  Jean-Marie is a board member of four emerging companies: HepatoChem, Ogenx, Ronoc Patent, and Oxalys, and a member of the LaunchPad Venture Group, a Boston group of angel investors, since 2011.  He is also a co-founder of Innovate-America, a mini-fund designed to support ground-breaking protein technology from MIT.</p>
                 <p><b><a href="https://www.linkedin.com/in/jmvallet1">LinkedIn</a></b></p>
               </div>
               <div class="modal-footer">
@@ -257,7 +254,7 @@ reverse the progression of neurodegenerative diseases">
         </div>
         <!-- /.modal --> 
 		
-		<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -280,27 +277,27 @@ reverse the progression of neurodegenerative diseases">
         <!-- /.modal --> 
 
 <!-- ==== TEAM MEMBERS ==== -->
-<div id="team" name="team">
+<div id="team">
   <div class="container">
     <div class="row centered">
       <h2 class="centered">OUR TEAM</h2>
       <hr>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/KSThumbnail.jpg" height="120px" width="120px" alt="">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/KSThumbnail.jpg" alt="Katherine Sepp Photo">
         <h4><strong>Katharine Sepp, PhD</strong></h4>
         <p>Chief Executive Officer & Co-founder</p>
 		<a data-toggle="modal" href="#modal1" class="btn btn-default">Bio</a>
 	 </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JSThumbnail.jpg" height="120px" width="120px" alt="">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JSThumbnail.jpg" alt="Joost Shulte Photo">
         <h4><b>Joost Shulte, PhD</b></h4>
         <p>Chief Scientific Officer & Co-founder</p>
 		<a data-toggle="modal" href="#modal2" class="btn btn-default">Bio</a>
 	  </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMVThumbnail.jpg" height="120px" width="120px" alt="">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMVThumbnail.jpg" alt="Jean-Marie Vallet Photo">
         <h4><b>Jean-Marie Vallet, MBA, PhD</b></h4>
         <p>Director</p>
 		<a data-toggle="modal" href="#modal3" class="btn btn-default">Bio</a>
       </div>
-	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/MRThumbnail.jpg" height="120px" width="120px" alt="">
+	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/MRThumbnail.jpg" alt="Marc Rioult Photo">
         <h4><b>Mark Rioult, MBA, PhD</b></h4>
         <p>Director</p>
 		<a data-toggle="modal" href="#modal4" class="btn btn-default">Bio</a>
@@ -315,7 +312,7 @@ reverse the progression of neurodegenerative diseases">
 <!-- container --> 
 
 <!-- ==== CONTACT ==== -->
-<div id="contact" name="contact">
+<div id="contact">
   <div class="container">
     <div class="row">
       <h2 class="centered">CONTACT US</h2>
@@ -335,9 +332,8 @@ reverse the progression of neurodegenerative diseases">
 				if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					echo "<p>$response_message</p>";
 				}
-				//echo "<p>Please answer the following question and type your answer below. 7 + 5 = ?<p>";
 			?>
-        <form id="contact" method="post" action="index.php#contact" class="form" role="form">
+        <form id="contact_form" method="post" action="index.php#contact" class="form" role="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">
               <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
@@ -354,8 +350,8 @@ reverse the progression of neurodegenerative diseases">
 					<input id="spam-honeypot" class="form-control" name="spam-honeypot" type="text" placeholder="LEAVE BLANK!!!">
 				</div>
 		  </div>
-	</div>
         </form>
+	  </div>
         <!-- form --> 
     </div>
     <!-- row --> 
@@ -375,9 +371,8 @@ reverse the progression of neurodegenerative diseases">
         <ul class="list-inline social-buttons">
           <li><a href="https://twitter.com/oxalyspharma"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UCg3a0elR1aO_6-eQfJuCC2g"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
-		  <br>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 		  <li>Arrow icons provided by <a href="http://glyphicons.com/">Glyphicons</a></li>
         </ul>
       </div>
