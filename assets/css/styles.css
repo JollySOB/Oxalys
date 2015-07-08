@@ -6542,10 +6542,11 @@ body .header {
 	.navbar-inverse .navbar-nav > li > a{
 		color: black;
 	}
-
-	.navbar-inverse .navbar-nav > li > a:hover{
-		color: #778899;
-	}
+	
+	.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #778899;
+    background-color: transparent;
+}
 
 	.in, .collapsing{
 		margin-top: 50px;

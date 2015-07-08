@@ -126,14 +126,14 @@ reverse the progression of neurodegenerative diseases">
 			<a href="#about" class="smoothScroll btn btn-lg more-info">Learn More</a>
 		</div>
 	</div>
-	<div id="slide2" class="slide" style="display: none">
+	<div id="slide2" class="slide">
 	  <div class="slide-content">
 		<strong><h2>Intelligent Drug Discovery</h2></strong>
 		<h3>Targeting Causes, Not Symptoms.</h3>
 		<a href="#services" class="smoothScroll btn btn-lg more-info">Our Services</a>
 	  </div>
 	</div>
-	<div id="slide3" class="slide" style="display: none">
+	<div id="slide3" class="slide">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
 		<h3>Targeting Diseases, Not Symptoms</h3>
