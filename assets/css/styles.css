@@ -6337,7 +6337,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	height: 100%;
 }
 
-
 /* For the "more info" links in the carousel slides */
 .more-info{
 	color: white;
@@ -6399,10 +6398,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	z-index: 3;
 }
 
-#slide1 h3{
-	color: white;
-}
-
 #slide2{
 	background-image: url(../img/backgrounds/MountainPath.jpg);
 	z-index: 2;
@@ -6419,6 +6414,13 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	padding-top: 77px;
 }
 
+#about img{
+	text-align: center;
+}
+
+#about .list-inline{
+	text-align: center;
+}
 /* === THERAPEUTICS SECTION === */
 
 #therapeutics{
@@ -6441,8 +6443,8 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 /* === TEAM === */	
 
 #team img{
-	height: 120px;
-	width: 120px;
+	height: 100px;
+	width: 100px;
 }
 
 .modal-body img{
@@ -6459,12 +6461,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 /* === CONTACT === */
-/*#spam-test {
-	position: relative;
-	left: 50%;
-	margin-bottom: 1%;
-}*/
-
 form div p{
 	margin: auto auto 1% auto;
 }
@@ -6508,6 +6504,14 @@ form div p{
 /* === FOOTER === */
 .copyright{
 	display: block;
+}
+
+#footerwrap h3{
+	color: white;
+}
+
+#credits, #supporters{
+	display: inline;
 }
 
 /* ==========================================================================
@@ -6559,8 +6563,12 @@ body .header {
 	}
 }
 
+/* ==== NAVIGATION ==== */
+
 @media screen and (max-width:328px) {
 	.in, .collapsing{
 		margin-top: 65px;
 	}
 }
+
+/* ==== ABOUT ==== */

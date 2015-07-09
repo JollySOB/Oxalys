@@ -16,10 +16,6 @@
 			$response_message = "Sorry, but there was something wrong with your input, please try again.";
 		}
 		
-		/* else if ($_POST['spam-test'] != $spam_test_answer) {
-			$response_message = "Please make sure to correctly answer the question below!";
-		} */
-		
 		else if (!filter_var($sender_email, FILTER_VALIDATE_EMAIL)) {
 			$response_message = "Please ensure that you have provided a valid e-mail address!";
 		}
@@ -149,18 +145,24 @@ reverse the progression of neurodegenerative diseases">
 <!-- ==== ABOUT ==== -->
 <div id="about">
   <div class="container">
-    <div class="row white">
       <h2 class="centered">ABOUT US</h2>
-      <div class="col-md-6"> <img class="img-responsive" src="assets/img/about/about1.jpg" alt=""> </div>
+	  <!--<img class="img-responsive" src="assets/img/about/about1.jpg" alt="Connect With Us">-->
+	  <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/oxalyspharma"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCg3a0elR1aO_6-eQfJuCC2g"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
       <div class="col-md-6">
         <h3>Everyone's Health Matters</h3>
         <p>At Oxalys Pharmaceuticals, we believe that everyone should be able to access truly effective therapies for brain health.  This includes people with rare genetic or age-related neurodegenerative disorders.  We aim to develop therapies that are simple to administer, and that can halt, slow, or reverse the course of brain degeneration.</p>
-        <h3>Who we are</h3>
+      </div>
+	  <div class="col-md-6">
+		<h3>Who we are</h3>
         <p>Oxalys was founded by scientists passionate for brain health.  Our drug discovery methods and first pipeline therapeutics originated from research at the Massachusetts Institute of Technology (MIT).  We work collaboratively with global industry experts and leaders in neurology to develop breakthrough and transformative therapies.  Our drug development has been supported by the Michael J Fox Foundation and the National Research Council of Canada.</p>
       </div>
     </div>
-    <!-- row --> 
-  </div>
 </div>
 <!-- container --> 
 
@@ -343,7 +345,6 @@ reverse the progression of neurodegenerative diseases">
             </div>
           </div>
           <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
-		  <!--<div class="row"><div class="col-xs-6 col-md-6 form-group"><input id="spam-test" class="form-control" name="spam-test" type="text" placeholder="Your answer here:" required /></div></div>-->
 		  <div class="row">
 				<button class="btn btn-lg" type="submit">Send Message</button>
 				<div id="spam-honeypot-container" class="col-xs-6 col-md-6 form-group">
@@ -363,19 +364,16 @@ reverse the progression of neurodegenerative diseases">
 <div id="footerwrap">
   <div class="container">
     <div class="row">
-      <div class="col-md-8"> 
-		<span class="copyright">Copyright &copy; 2015 Oxalys Pharmaceuticals</span>
-		<span class="copyright">Original Template Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span>
+      <div id="supporters">
+		<h3>Our Supporters</h3>
 	  </div>
-      <div class="col-md-4">
-        <ul class="list-inline social-buttons">
-          <li><a href="https://twitter.com/oxalyspharma"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCg3a0elR1aO_6-eQfJuCC2g"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-		  <li>Arrow icons provided by <a href="http://glyphicons.com/">Glyphicons</a></li>
-        </ul>
-      </div>
+	  <div>
+		<ul class="list-inline">
+			<li><span class="copyright">Copyright &copy; 2015 Oxalys Pharmaceuticals</span></li>
+			<li><span class="copyright">Original Template Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span></li>
+			<li><span class="copyright">Icons provided by <a href="http://glyphicons.com/">Glyphicons</a></span></li>	
+	    </ul>
+	  </div>
     </div>
   </div>
 </div>
