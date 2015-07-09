@@ -6501,11 +6501,13 @@ form div p{
 }
 
 #footer_nav{
-	text-align: center;
+	position: relative;
+	right: 1%;
 }
 
 #footerwrap h3{
 	color: white;
+	text-align: center;
 }
 /* ==========================================================================
    MEDIA QUERIES
