@@ -100,5 +100,10 @@
 	})
 	
 	//Footer slide logic
-	
+	$("#footer_nav").click(function() {
+		$("#footerwrap .container").slideToggle(500);
+		$('html, body').animate({
+		scrollTop: $("#footer_nav").offset().top + $('window').height()
+		}, 2000);
+	})
 	

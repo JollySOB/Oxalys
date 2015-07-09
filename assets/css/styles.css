@@ -5851,24 +5851,10 @@ td.visible-print {
 	z-index: 4;
 }
 
-.glyphicon-chevron-left-ie{
-	font-size: 2em;
-	float: right;
+.glyphicon-chevron-up {
+	font-size: 1.5em;
 	color: white;
-	position: relative;
-	left: 1%;
-	z-index: 4;
 }
-
-.glyphicon-chevron-right-ie{
-	font-size: 2em;
-	float: right;
-	color: white;
-	z-index: 4;
-	position: relative;
-	right: 1%;
-}
-
 
 /*# sourceMappingURL=bootstrap.css.map */
 
@@ -6506,14 +6492,21 @@ form div p{
 	display: block;
 }
 
+#footerwrap .container{
+	display: none;
+}
+
+#footer_nav:hover{
+	opacity: 0.25;
+}
+
+#footer_nav{
+	text-align: center;
+}
+
 #footerwrap h3{
 	color: white;
 }
-
-#credits, #supporters{
-	display: inline;
-}
-
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
@@ -6570,5 +6563,3 @@ body .header {
 		margin-top: 65px;
 	}
 }
-
-/* ==== ABOUT ==== */
