@@ -6462,7 +6462,14 @@ form div p{
 	text-align: left;
 }
 
-#contact .btn {
+#contact .glyphicon-usd{
+	margin-top: -20%;
+	margin-bottom: 3%;
+	color: #FFBF00;
+	font-size: 1.75em;
+}
+
+#contact .btn-lg{
 	display: block;
 	font-weight: 500;
 	font-size: 18px;
@@ -6471,22 +6478,22 @@ form div p{
 	color: #fff;
 	border: 0;
 }
-#contact .btn:hover, #contact .btn:focus {
+#contact .btn-lg:hover, #contact .btn-lg:focus {
 	background-color: #e9af03;
 	outline: 0px;
+}
+
+#support_btn{
+	padding: 1%;
 }
 
 #contact p{
 	color: black;
 }
 
-
-/*TO DO: center this mathematically rather than by eye */
-#contact .col-md-4{
-	position: relative;
-	left: 17%;
+#contact{
+	background: #F5F5F5;
 }
-
 /* === FOOTER === */
 .copyright{
 	display: block;

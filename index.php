@@ -266,10 +266,31 @@ reverse the progression of neurodegenerative diseases">
               <div class="modal-body">
                 <p><img class="img-responsive" src="assets/img/team/MRThumbnail.jpg" alt="Mark Rioult Photo"></p>
                 <p>Dr. Marc Rioult has been involved in the development of technologies and technology-based companies, in the creation of startups, and in technology acquisition and commercialization for over twelve years. Working mainly in the life and medical sciences, he has also experience in nanotechnologies, electronics, software, chemicals, microfluidics, and consumer products.  He is currently Managing Director at 3DM Inc, the US subsidiary of the 3DM Group, Japan, and is doing business development in the US and in Europe. Prior to this, he was a Technology Licensing Officer at MIT where he managed and developed a portfolio of inventions, IP, licenses, and facilitated the creation of over ten startups. Before joining MIT, he worked consecutively for two consulting firms engaged in IP and technology transactions for enterprises ranging from global Fortune 500 clients to startups. Prior to this, he co-led a small software company for two years after having left academic research in neuroscience.  Dr. Rioult has a PhD in neuroscience and an MS in biology and biomedical engineering from the Federal Institute of Technology (ETH) in Zurich, and an MBA from the executive MBA program at Boston University. He has published and lectured internationally on scientific and business topics and has co-organized two international scientific symposiums.</p>
-                <p><b><a href="#">External links!</a></b></p>
+                <p><b><a href="https://www.linkedin.com/pub/marc-g-rioult/0/75/472">LinkedIn</a></b></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+		
+		<div class="modal fade" id="support_modal" tabindex="-1" role="dialog" aria-labelledby="support_modal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">How You Can Make A Difference</h4>
+			  </div>
+				<div class="modal-body">
+					<p>Words here</p>
+				</div>
+              <div class="modal-footer">
+				<p>112 College Street - Suite 411<br>
+				   Toronto Ontario M5G 1L6</p></a>
               </div>
             </div>
             <!-- /.modal-content --> 
@@ -320,8 +341,13 @@ reverse the progression of neurodegenerative diseases">
       <h2 class="centered">CONTACT US</h2>
 		  <div class="col-md-4"> 
 			<i class="fa fa-map-marker fa-2x"></i>
-			<a href="https://www.google.ca/maps/place/112+College+St,+University+of+Toronto+-+St.+George+Campus,+Toronto,+ON+M5G+1L6/@43.6603996,-79.389428,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34b7c6a387e9:0xf6ed00694e7c9c93"><p>112 College Street - Suite 411<br>
+			<a href="https://www.google.ca/maps/place/112+College+St,+University+of+Toronto+-+St.+George+Campus,+Toronto,+ON+M5G+1L6/@43.6603996,-79.389428,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34b7c6a387e9:0xf6ed00694e7c9c93">
+			<p>112 College Street - Suite 411<br>
 			  Toronto Ontario M5G 1L6</p></a>
+		  </div>
+		  <div id="support_btn" class="col-md-4">
+			<span class="glyphicon glyphicon-usd"></span><br>
+			<a data-toggle="modal" href="#support_modal" class="btn btn-default">Support Us</a>
 		  </div>
 		  <div class="col-md-4"> 
 			<i class="fa fa-envelope-o fa-2x"></i>
