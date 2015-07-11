@@ -6,6 +6,7 @@
 	var $LAST_INDICATOR = $(".carousel-indicators li:last-child");
 	var CAROUSEL_INDICATOR_SLIDE_ID_INDEX = 1;
 	var FADE_SPEED = 500;
+	var FOOTER_SLIDE_SPEED = 300;
 	var FIRST_ITERATION = 1;
 	var $currentSlide = $FIRST_SLIDE;
 	var $currentIndicator = $FIRST_INDICATOR;
@@ -101,9 +102,7 @@
 	
 	//Footer slide logic
 	$("#footer_nav").click(function() {
-		$("#footerwrap .container").slideToggle(500);
-		$('html, body').animate({
-		scrollTop: $("#footer_nav").offset().top + $('window').height()
-		}, 2000);
+		$("#footerwrap .container").slideToggle(FOOTER_SLIDE_SPEED);
+		$("html, body").animate({ scrollTop: $(document).height()}, FOOTER_SLIDE_SPEED);
 	})
 	
