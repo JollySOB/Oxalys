@@ -278,7 +278,7 @@ reverse the progression of neurodegenerative diseases">
         </div>
         <!-- /.modal --> 
 		
-		<div class="modal fade" id="support_modal" tabindex="-1" role="dialog" aria-labelledby="support_modal" aria-hidden="true">
+		<div class="modal fade" id="support-modal" tabindex="-1" role="dialog" aria-labelledby="support-modal" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -345,9 +345,9 @@ reverse the progression of neurodegenerative diseases">
 			<p>112 College Street - Suite 411<br>
 			  Toronto Ontario M5G 1L6</p></a>
 		  </div>
-		  <div id="support_btn" class="col-md-4">
+		  <div id="support-btn" class="col-md-4">
 			<span class="glyphicon glyphicon-usd"></span><br>
-			<a data-toggle="modal" href="#support_modal" class="btn btn-default">Support Us</a>
+			<a data-toggle="modal" href="#support-modal" class="btn btn-default">Support Us</a>
 		  </div>
 		  <div class="col-md-4"> 
 			<i class="fa fa-envelope-o fa-2x"></i>

@@ -6433,6 +6433,12 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	width: 100px;
 }
 
+/* === MODALS === */
+
+#support-modal .modal-footer p{
+	color: white;
+}
+
 .modal-body img{
 	margin-right: 3%;
 	margin-bottom: 0.5%;
@@ -6483,7 +6489,7 @@ form div p{
 	outline: 0px;
 }
 
-#support_btn{
+#support-btn{
 	padding: 1%;
 }
 
