@@ -101,7 +101,7 @@
 	})
 	
 	//Footer slide logic
-	$("#footer_nav").click(function() {
+	$("#footer-nav").click(function() {
 		$("#footerwrap .container").slideToggle(FOOTER_SLIDE_SPEED);
 		$("html, body").animate({ scrollTop: $(document).height()}, FOOTER_SLIDE_SPEED);
 	})
