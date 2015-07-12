@@ -68,7 +68,8 @@ reverse the progression of neurodegenerative diseases">
 
 <!-- Javascript via CDN-->
 <script type="text/javascript" src="ahttps://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <!-- Local fall back for jquery in case of CDN outage -->
 <script>if (!window.jQuery) {document.write('<script src="assets/js/jquery.min.js"><\/script>');}</script>
 <!--<script>if (!window.jQuery.easing) {document.write('<script src="assets/js/jquery.easing.min.js"><\/script>');}</script>-->
@@ -359,7 +360,7 @@ reverse the progression of neurodegenerative diseases">
 					echo "<p>$response_message</p>";
 				}
 			?>
-        <form id="contact_form" method="post" action="index.php#contact" class="form" role="form">
+        <form id="contact-form" method="post" action="index.php#contact" class="form" role="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">
               <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
@@ -386,7 +387,7 @@ reverse the progression of neurodegenerative diseases">
 <!-- container -->
 
 <div id="footerwrap">
-  <span id="footer_nav" class="glyphicon glyphicon-chevron-up"></span>
+  <span id="footer-nav" class="glyphicon glyphicon-chevron-up"></span>
   <div class="container">
     <div class="row">
       <div id="supporters">

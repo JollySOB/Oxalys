@@ -6486,9 +6486,10 @@ form div p{
 
 #contact button{
 	margin-top: 2.5%;
+	margin-left: -70px;
 	float: left;
 	position: relative;
-	left: 41%;
+	left: 50%;
 }
 
 #contact .btn-lg:hover, #contact .btn-lg:focus {
@@ -6516,11 +6517,11 @@ form div p{
 	display: none;
 }
 
-#footer_nav:hover{
+#footer-nav:hover{
 	opacity: 0.25;
 }
 
-#footer_nav{
+#footer-nav{
 	position: relative;
 	right: 1%;
 }
@@ -6547,7 +6548,15 @@ body .header {
 }
 }
 
+/* The rest of the queries address various layout issues that occur as the screen width gets smaller.*/
+@media screen and (max-width:992px) {
+	#support-btn{
+		margin-bottom: 40px;
+	}
+}
+
 @media screen and (max-width:769px) {
+
 	#headerwrap h1 {
 		font-size: 80px;
 	}
@@ -6577,8 +6586,6 @@ body .header {
 		margin-top: 50px;
 	}
 }
-
-/* ==== NAVIGATION ==== */
 
 @media screen and (max-width:328px) {
 	.in, .collapsing{
