@@ -68,8 +68,10 @@ reverse the progression of neurodegenerative diseases">
 
 <!-- Javascript via CDN-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 <!-- Local fall backs for scripts in case of CDN outage -->
 <script>if (!window.jQuery) {document.write('<script src="assets/js/jquery.min.js"><\/script>');}</script>
+
 <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>

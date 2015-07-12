@@ -6370,13 +6370,21 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	display: block;
 }
 
-#header #left-nav, #header #right-nav{
+#left-nav, #right-nav{
 	margin-top: 250px;
 	display: inline;
 }
 
-#header #left-nav:hover, #header #right-nav:hover{
+#left-nav:hover, #right-nav:hover{
 	opacity: 0.25;
+}
+
+#left-nav{
+	left: 1%;
+}
+
+#right-nav{
+	right: 1%;
 }
 
 #slide1 {
