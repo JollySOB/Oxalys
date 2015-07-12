@@ -67,13 +67,11 @@ reverse the progression of neurodegenerative diseases">
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
 <!-- Javascript via CDN-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<!-- Local fall backs for scripts in case of CDN outage -->
+<script type="text/javascript" src="ahttps://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
+<!-- Local fall back for jquery in case of CDN outage -->
 <script>if (!window.jQuery) {document.write('<script src="assets/js/jquery.min.js"><\/script>');}</script>
-<script>if (!window.jQuery) {document.write('<script src="assets/js/jquery.easing.min.js"><\/script>');}</script>
-<script>if (!window.jQuery) {document.write('<script src="assets/js/jquery-ui.min.js"><\/script>');}</script>
+<!--<script>if (!window.jQuery.easing) {document.write('<script src="assets/js/jquery.easing.min.js"><\/script>');}</script>-->
 
 <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

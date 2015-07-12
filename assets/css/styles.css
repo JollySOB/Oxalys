@@ -6479,11 +6479,18 @@ form div p{
 	display: block;
 	font-weight: 500;
 	font-size: 18px;
-	margin: 2.5% auto auto auto;
 	background-color: #ffbf00;
 	color: #fff;
 	border: 0;
 }
+
+#contact button{
+	margin-top: 2.5%;
+	float: left;
+	position: relative;
+	left: 41.5%;
+}
+
 #contact .btn-lg:hover, #contact .btn-lg:focus {
 	background-color: #e9af03;
 	outline: 0px;
