@@ -182,7 +182,9 @@ reverse the progression of neurodegenerative diseases">
 	<div class="container">
 		<div class="row">
 			<h2 class="centered">OUR THERAPEUTICS</h2>
-			<p>Our therapeutics are developed to treat disease progression, not just symptoms. These ‘neuroprotective’ compounds inhibit biological processes that accelerate brain aging.  In this way, brain health and function can be retained longer. Our most advanced pipeline therapeutic, OXD4, is highly neuroprotective in preclinical tests, and is applicable to multiple neurodegenerative diseases.  We are developing it first for Huntington’s disease, which represents the fastest route to clinical use.  Applications to additional disorders, such as Parkinson’s disease will closely follow.</p>
+			<div class="col-lg-8 col-lg-offset-2">
+				<p class="large">Our therapeutics are developed to treat disease progression, not just symptoms. These ‘neuroprotective’ compounds inhibit biological processes that accelerate brain aging.  In this way, brain health and function can be retained longer. Our most advanced pipeline therapeutic, OXD4, is highly neuroprotective in preclinical tests, and is applicable to multiple neurodegenerative diseases.  We are developing it first for Huntington’s disease, which represents the fastest route to clinical use.  Applications to additional disorders, such as Parkinson’s disease will closely follow.</p>
+			</div>
 		</div>
 	</div>
 </div>
