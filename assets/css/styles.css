@@ -6558,6 +6558,10 @@ form div p{
 	display: block;
 }
 
+.col-md-6{
+	width: 33.3%;
+}
+
 #footerwrap .container{
 	display: none;
 }

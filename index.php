@@ -395,6 +395,18 @@ reverse the progression of neurodegenerative diseases">
     <div class="row">
       <div id="supporters">
 		<h3>Our Supporters</h3>
+		<div class="col-md-6">
+			<p>Supporter 1</p>
+			<p>Supporter 4</p>
+		</div>
+		<div class="col-md-6">
+			<p>Supporter 2</p>
+			<p>Supporter 5</p>
+		</div>
+		<div class="col-md-6">
+			<p>Supporter 3</p>
+			<p>Supporter 6</p>
+		</div>
 	  </div>
 	  <div>
 		<ul class="list-inline">
