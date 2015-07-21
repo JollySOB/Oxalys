@@ -36,6 +36,7 @@
 			$LAST_INDICATOR.addClass("active");
 			$currentIndicator = $LAST_INDICATOR;
 		}
+		//Standard left navigation logic
 		else {
 			$currentSlide.prev().fadeIn(FADE_SPEED);
 			$currentSlide.fadeOut(FADE_SPEED);
@@ -61,6 +62,7 @@
 			$FIRST_INDICATOR.addClass("active");
 			$currentIndicator = $FIRST_INDICATOR;
 		}
+		//Standard right navigation logic
 		else {
 			$currentSlide.next().fadeIn(FADE_SPEED);
 			$currentSlide.fadeOut(FADE_SPEED);
@@ -76,7 +78,6 @@
 	//Carousel arrow click event handlers
 	$("#left-nav").click(left_nav_logic);
 	$("#right-nav").click(right_nav_logic);
-	$("#right-nav-ie").click(right_nav_logic);
 	
 	//Logic for switching slides via carousel indicators
 	$(".carousel-indicators li").click(function() {

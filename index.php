@@ -21,7 +21,6 @@
 		}
 		
 		else {
-			//Sendmail does not seem to work on windows?
 			//Try using the PHP mail funtion to send email from the web server itself. Might need to confidugre php.ini in order for mail() to work. 
 			//If that does not work, use smpt server belowtry smtp servers.
 			$mail = new PHPmailer();
@@ -66,10 +65,10 @@ reverse the progression of neurodegenerative diseases">
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-<!-- Javascript via CDN-->
+<!-- Javascript via CDN -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<!-- Local fall backs for scripts in case of CDN outage -->
+<!-- Local fall back for jQuery in case of CDN outage -->
 <script>if (!window.jQuery) {document.write('<script src="assets/js/jquery.min.js"><\/script>');}</script>
 
 <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -87,7 +86,7 @@ reverse the progression of neurodegenerative diseases">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand smoothScroll" href="#header"><img src="assets/img/LogoSmaller.png" alt="Logo"/></a>
+        <a class="navbar-brand smoothScroll" href="#header"><img src="assets/img/LogoSmaller-min.png" alt="Logo"/></a>
 	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -183,7 +182,7 @@ reverse the progression of neurodegenerative diseases">
 		<div class="row">
 			<h2 class="centered">OUR THERAPEUTICS</h2>
 			<div class="col-lg-8 col-lg-offset-2">
-				<p class="large">Our therapeutics are developed to treat disease progression, not just symptoms. These ‘neuroprotective’ compounds inhibit biological processes that accelerate brain aging.  In this way, brain health and function can be retained longer. Our most advanced pipeline therapeutic, OXD4, is highly neuroprotective in preclinical tests, and is applicable to multiple neurodegenerative diseases.  We are developing it first for Huntington’s disease, which represents the fastest route to clinical use.  Applications to additional disorders, such as Parkinson’s disease will closely follow.</p>
+				<p class="large">Our therapeutics are developed to treat disease progression, not just symptoms. These ‘neuroprotective’ compounds inhibit biological processes that accelerate brain aging.  In this way, brain health and function can be retained longer. Our most advanced pipeline therapeutic, OXD4, is highly neuroprotective in preclinical tests, and is applicable to multiple neurodegenerative diseases.  We are developing it first for Huntington’s disease, which represents the fastest route to clinical use.  Applications to additional disorders, such as Parkinson’s disease, will closely follow.</p>
 			</div>
 		</div>
 	</div>
@@ -220,7 +219,7 @@ reverse the progression of neurodegenerative diseases">
                 <h4 class="modal-title">Joost Schulte</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/team/JSThumbnail.jpg" alt="Jooste Schulte Photo"></p>
+                <!--<p><img class="img-responsive" src="" alt="Jooste Schulte Photo"></p>-->
                 <p>Dr. Joost Schulte is a neuroscientist with 20 years experience, and prior to co-founding Oxalys he has been active in neurodegeneration pharmaceutical R and D in both academic and industrial settings.  As a research scientist at EnVivo Pharmaceuticals (Cambridge, MA), he developed novel assays for therapeutics screening in Huntington’s, Parkinson’s and Alzheimer’s disease models, leading to the company’s first patented IP.   He then developed a Huntington’s disease high-content drug discovery platform at MIT and the Broad Institute in Cambridge, MA. The platform was applied to screening libraries at the Harvard Medical School DRSC and ICCB-L to discover the Oxalys pipeline therapeutics.  He has worked with the Harvard Catalyst Program in Translational Medicine and the European Huntington’s Disease Network to develop the clinical trial protocols for Oxalys’ Huntington’s disease upcoming clinical trial.  He holds a PhD in neuroscience from the University of British Columbia and carried out his postdoctoral research at MIT.  Dr. Schulte has been supported by the Rick Hansen Neurotrauma Initiative, National Science and Engineering Research Council (NSERC) and the Ontario Brain Institute/Ontario Centres of Excellence.</p>
               </div>
               <div class="modal-footer">
@@ -241,8 +240,8 @@ reverse the progression of neurodegenerative diseases">
                 <h4 class="modal-title">Jean-Marie Vallet</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/team/JMVThumbnail.jpg" alt="Jean-Marie Vallet Photo"></p>
-                <p>Dr. Jean-Marie Vallet is a French-American life sciences executive with more than 30 years of experience in various roles, including R and D, sales & marketing, administration, corporate development and licensing.  He started as a genetic engineer at Battelle Institute in 1985 after obtaining his Ph.D. in Molecular Biology and joined the pharmaceutical industry after obtaining his MBA in 1988.  Starting in Europe (Switzerland, France, and Germany), he relocated to the US in 1994 for a senior corporate business development position with Warner Lambert.  Passionate for innovation and entrepreneurship, he left the world of “Big Pharmas” for the biotech industry with Guilford Pharmaceuticals in 2002 and with EnVivo Pharmaceuticals in 2006, both specialized in neurosciences.  JM retired in 2011 from EnVivo to start Cyrma Ventures LLC, a small consulting firm providing corporate development and financing services to emerging life science companies.  Since 2007, Dr. Vallet is an Advisor to the French Government for Trade and Commerce and an active mentor of several European biotech companies expanding their business in the US (NETVA, Venture Leaders YEi).  Jean-Marie is a board member of four emerging companies: HepatoChem, Ogenx, Ronoc Patent, and Oxalys, and a member of the LaunchPad Venture Group, a Boston group of angel investors, since 2011.  He is also a co-founder of Innovate-America, a mini-fund designed to support ground-breaking protein technology from MIT.</p>
+                <p><img class="img-responsive" src="assets/img/team/JMVThumbnail-min.jpg" alt="Jean-Marie Vallet Photo"></p>
+                <p>Dr. Jean-Marie Vallet is a French-American life sciences executive with more than 30 years of experience in various roles, including R and D, sales and marketing, administration, corporate development and licensing.  He started as a genetic engineer at Battelle Institute in 1985 after obtaining his Ph.D. in Molecular Biology and joined the pharmaceutical industry after obtaining his MBA in 1988.  Starting in Europe (Switzerland, France, and Germany), he relocated to the US in 1994 for a senior corporate business development position with Warner Lambert.  Passionate for innovation and entrepreneurship, he left the world of “Big Pharmas” for the biotech industry with Guilford Pharmaceuticals in 2002 and with EnVivo Pharmaceuticals in 2006, both specialized in neurosciences.  JM retired in 2011 from EnVivo to start Cyrma Ventures LLC, a small consulting firm providing corporate development and financing services to emerging life science companies.  Since 2007, Dr. Vallet is an Advisor to the French Government for Trade and Commerce and an active mentor of several European biotech companies expanding their business in the US (NETVA, Venture Leaders YEi).  Jean-Marie is a board member of four emerging companies: HepatoChem, Ogenx, Ronoc Patent, and Oxalys, and a member of the LaunchPad Venture Group, a Boston group of angel investors, since 2011.  He is also a co-founder of Innovate-America, a mini-fund designed to support ground-breaking protein technology from MIT.</p>
                 <p><b><a href="https://www.linkedin.com/in/jmvallet1">LinkedIn</a></b></p>
               </div>
               <div class="modal-footer">
@@ -263,7 +262,7 @@ reverse the progression of neurodegenerative diseases">
                 <h4 class="modal-title">Mark Rioult</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/team/MRThumbnail.jpg" alt="Mark Rioult Photo"></p>
+                <p><img class="img-responsive" src="assets/img/team/MRThumbnail-min.jpg" alt="Mark Rioult Photo"></p>
                 <p>Dr. Marc Rioult has been involved in the development of technologies and technology-based companies, in the creation of startups, and in technology acquisition and commercialization for over twelve years. Working mainly in the life and medical sciences, he has also experience in nanotechnologies, electronics, software, chemicals, microfluidics, and consumer products.  He is currently Managing Director at 3DM Inc, the US subsidiary of the 3DM Group, Japan, and is doing business development in the US and in Europe. Prior to this, he was a Technology Licensing Officer at MIT where he managed and developed a portfolio of inventions, IP, licenses, and facilitated the creation of over ten startups. Before joining MIT, he worked consecutively for two consulting firms engaged in IP and technology transactions for enterprises ranging from global Fortune 500 clients to startups. Prior to this, he co-led a small software company for two years after having left academic research in neuroscience.  Dr. Rioult has a PhD in neuroscience and an MS in biology and biomedical engineering from the Federal Institute of Technology (ETH) in Zurich, and an MBA from the executive MBA program at Boston University. He has published and lectured internationally on scientific and business topics and has co-organized two international scientific symposiums.</p>
                 <p><b><a href="https://www.linkedin.com/pub/marc-g-rioult/0/75/472">LinkedIn</a></b></p>
               </div>
@@ -285,7 +284,11 @@ reverse the progression of neurodegenerative diseases">
                 <h4 class="modal-title">How You Can Make A Difference</h4>
 			  </div>
 				<div class="modal-body">
-					<p>Words here</p>
+					<p>You can be part of the solution for developing effective therapeutics!
+					   Oxalys seeks equity investments of greater than $1M from private investors, and considers risk-sharing partnerships from industry. 
+					   Oxalys also is also significantly supported by its friends of neurodegeneration research. All friends support goes directly to research and development.
+					   Friends can support us by contacting us, or via our PayPal donate link below.
+</p>
 				</div>
               <div class="modal-footer">
 				<p>112 College Street - Suite 411<br>
@@ -309,17 +312,17 @@ reverse the progression of neurodegenerative diseases">
         <p>Chief Executive Officer & Co-founder</p>
 		<a data-toggle="modal" href="#modal1" class="btn btn-default">Bio</a>
 	 </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JSThumbnail.jpg" alt="Joost Shulte Photo">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JSThumbnail-min.jpg" alt="Joost Shulte Photo">
         <h4><b>Joost Shulte, PhD</b></h4>
         <p>Chief Scientific Officer & Co-founder</p>
 		<a data-toggle="modal" href="#modal2" class="btn btn-default">Bio</a>
 	  </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMVThumbnail.jpg" alt="Jean-Marie Vallet Photo">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMVThumbnail-min.jpg" alt="Jean-Marie Vallet Photo">
         <h4><b>Jean-Marie Vallet, MBA, PhD</b></h4>
         <p>Director</p>
 		<a data-toggle="modal" href="#modal3" class="btn btn-default">Bio</a>
       </div>
-	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/MRThumbnail.jpg" alt="Marc Rioult Photo">
+	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/MRThumbnail-min.jpg" alt="Marc Rioult Photo">
         <h4><b>Mark Rioult, MBA, PhD</b></h4>
         <p>Director</p>
 		<a data-toggle="modal" href="#modal4" class="btn btn-default">Bio</a>
@@ -359,7 +362,7 @@ reverse the progression of neurodegenerative diseases">
 				if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					echo "<p>$response_message</p>";
 				}
-			?>
+		?>
         <form id="contact-form" method="post" action="index.php#contact" class="form" role="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">
@@ -405,10 +408,8 @@ reverse the progression of neurodegenerative diseases">
 </div>
  
 <!-- Scripts placed at the end of the document so that the pages load faster --> 
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
-<!-- TODO: MINIFY CAROUSEL.JS -->
-<script type="text/javascript" src="assets/js/carousel.js"></script>
+<script type="text/javascript" src="assets/js/carousel.min.js"></script>
 </body>
 </html>

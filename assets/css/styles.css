@@ -6388,17 +6388,17 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #slide1 {
-	background-image: url(../img/backgrounds/Oxalys.jpg);
+	background-image: url(../img/backgrounds/Oxalys-min.jpg);
 	z-index: 3;
 }
 
 #slide2{
-	background-image: url(../img/backgrounds/MountainPath.jpg);
+	background-image: url(../img/backgrounds/MountainPath-min.jpg);
 	z-index: 2;
 }
 
 #slide3 {
-	background-image: url(../img/backgrounds/Amaryllis.jpg);
+	background-image: url(../img/backgrounds/Amaryllis-min.jpg);
 	z-index: 1;
 }
 
@@ -6415,6 +6415,31 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 #about .list-inline{
 	text-align: center;
 }
+
+.fa:hover{
+	color: #98CB4D;
+}
+
+.fa-twitter{
+	color: #4099FF;
+}
+
+.fa-youtube{
+	color: #F12B30;
+}
+
+.fa-google-plus{
+	color: #dd4b39;
+}
+
+.fa-linkedin{
+	color: #0077B5;
+}
+
+.fa-instagram{
+	color: #3F729B;
+}
+
 /* === THERAPEUTICS SECTION === */
 
 #therapeutics{
@@ -6422,16 +6447,19 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	padding-top: 2%;
 }
 
-
 /* === SERVICES === */
 #services{
-	background-image: url(../img/backgrounds/Pipette.jpg);
+	background-image: url(../img/backgrounds/Services.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 #services p{
 	text-align: left;
+}
+
+#services a{
+	color: black;
 }
 
 /* === TEAM === */	
@@ -6446,6 +6474,11 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 #support-modal .modal-footer p{
 	color: white;
 }
+
+.modal-header{
+	background: #98CB4D;
+}
+
 
 .modal-body img{
 	margin-right: 3%;
@@ -6463,6 +6496,10 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 /* === CONTACT === */
 form div p{
 	margin: auto auto 1% auto;
+}
+
+#contact .fa{
+	color: #98CB4D;
 }
 
 #spam-honeypot-container {
@@ -6487,7 +6524,7 @@ form div p{
 	display: block;
 	font-weight: 500;
 	font-size: 18px;
-	background-color: #ffbf00;
+	background-color: #FFBF00;
 	color: #fff;
 	border: 0;
 }
@@ -6531,7 +6568,7 @@ form div p{
 
 #footer-nav{
 	position: relative;
-	right: 17px;
+	right: 11.5px;
 }
 
 #footerwrap h3{
@@ -6560,6 +6597,10 @@ body .header {
 @media screen and (max-width:992px) {
 	#support-btn{
 		margin-bottom: 40px;
+	}
+	
+	#team .btn{
+		margin-bottom: 2%;
 	}
 }
 
