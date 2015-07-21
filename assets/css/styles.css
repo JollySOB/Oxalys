@@ -6558,7 +6558,7 @@ form div p{
 	display: block;
 }
 
-.col-md-6{
+#footerwrap .col-md-6{
 	width: 33.3%;
 }
 
