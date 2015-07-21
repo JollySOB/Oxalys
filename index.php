@@ -176,6 +176,43 @@ reverse the progression of neurodegenerative diseases">
 </div>
 <!-- container --> 
 
+
+<!-- ==== TEAM MEMBERS ==== -->
+<div id="team">
+  <div class="container">
+    <div class="row centered">
+      <h2 class="centered">OUR TEAM</h2>
+      <hr>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/KSThumbnail.jpg" alt="Katherine Sepp Photo">
+        <h4><strong>Katharine Sepp, PhD</strong></h4>
+        <p>Chief Executive Officer & Co-founder</p>
+		<a data-toggle="modal" href="#modal1" class="btn btn-default">Bio</a>
+	 </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JSThumbnail-min.jpg" alt="Joost Shulte Photo">
+        <h4><b>Joost Shulte, PhD</b></h4>
+        <p>Chief Scientific Officer & Co-founder</p>
+		<a data-toggle="modal" href="#modal2" class="btn btn-default">Bio</a>
+	  </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMVThumbnail-min.jpg" alt="Jean-Marie Vallet Photo">
+        <h4><b>Jean-Marie Vallet, MBA, PhD</b></h4>
+        <p>Director</p>
+		<a data-toggle="modal" href="#modal3" class="btn btn-default">Bio</a>
+      </div>
+	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/MRThumbnail-min.jpg" alt="Marc Rioult Photo">
+        <h4><b>Mark Rioult, MBA, PhD</b></h4>
+        <p>Director</p>
+		<a data-toggle="modal" href="#modal4" class="btn btn-default">Bio</a>
+	  </div>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">The Oxalys team has a shared passion for developing truly effective therapies for neurodegenerative disease.  We combine our diverse talents and experience to create breakthrough solutions through constructive collaboration.</p>
+      </div>
+    </div>
+  </div>
+  <!-- row --> 
+</div>
+<!-- container -->
+
+
 <!-- === THERAPEUTICS INFO === -->
 <div id="therapeutics">
 	<div class="container">
@@ -294,47 +331,14 @@ reverse the progression of neurodegenerative diseases">
 				<p>112 College Street - Suite 411<br>
 				   Toronto Ontario M5G 1L6</p></a>
               </div>
+			  <i class="fa fa-step-forward fa-2x"></i>
             </div>
             <!-- /.modal-content --> 
           </div>
           <!-- /.modal-dialog --> 
         </div>
         <!-- /.modal --> 
-
-<!-- ==== TEAM MEMBERS ==== -->
-<div id="team">
-  <div class="container">
-    <div class="row centered">
-      <h2 class="centered">OUR TEAM</h2>
-      <hr>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/KSThumbnail.jpg" alt="Katherine Sepp Photo">
-        <h4><strong>Katharine Sepp, PhD</strong></h4>
-        <p>Chief Executive Officer & Co-founder</p>
-		<a data-toggle="modal" href="#modal1" class="btn btn-default">Bio</a>
-	 </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JSThumbnail-min.jpg" alt="Joost Shulte Photo">
-        <h4><b>Joost Shulte, PhD</b></h4>
-        <p>Chief Scientific Officer & Co-founder</p>
-		<a data-toggle="modal" href="#modal2" class="btn btn-default">Bio</a>
-	  </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/JMVThumbnail-min.jpg" alt="Jean-Marie Vallet Photo">
-        <h4><b>Jean-Marie Vallet, MBA, PhD</b></h4>
-        <p>Director</p>
-		<a data-toggle="modal" href="#modal3" class="btn btn-default">Bio</a>
-      </div>
-	  <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/MRThumbnail-min.jpg" alt="Marc Rioult Photo">
-        <h4><b>Mark Rioult, MBA, PhD</b></h4>
-        <p>Director</p>
-		<a data-toggle="modal" href="#modal4" class="btn btn-default">Bio</a>
-	  </div>
-      <div class="col-lg-8 col-lg-offset-2 centered">
-        <p class="large">The Oxalys team has a shared passion for developing truly effective therapies for neurodegenerative disease.  We combine our diverse talents and experience to create breakthrough solutions through constructive collaboration.</p>
-      </div>
-    </div>
-  </div>
-  <!-- row --> 
-</div>
-<!-- container --> 
+ 
 
 <!-- ==== CONTACT ==== -->
 <div id="contact">
@@ -348,7 +352,7 @@ reverse the progression of neurodegenerative diseases">
 			  Toronto Ontario M5G 1L6</p></a>
 		  </div>
 		  <div id="support-btn" class="col-md-4">
-			<span class="glyphicon glyphicon-usd"></span><br>
+			<i class="fa fa-gift fa-2x"></i>
 			<a data-toggle="modal" href="#support-modal" class="btn btn-default">Support Us</a>
 		  </div>
 		  <div class="col-md-4"> 

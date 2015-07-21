@@ -6341,7 +6341,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	margin-top: 50px;
 	padding-top: 200px;
 	text-align: center;
-	background-attachment: relative;
+	background-attachment: fixed;
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
@@ -6445,13 +6445,20 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 #therapeutics{
 	background-color: #F2F2F3;
 	padding-top: 2%;
+	background-image: url(../img/backgrounds/Pipette.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 /* === SERVICES === */
 #services{
-	background-image: url(../img/backgrounds/Services.png);
+	background-image: url(../img/backgrounds/Lab.jpg);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 #services p{
@@ -6579,6 +6586,29 @@ form div p{
 	color: white;
 	text-align: center;
 }
+
+/* === PARALLAX EFFECT === */
+/* 
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+} */
+
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
