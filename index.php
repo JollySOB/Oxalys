@@ -256,7 +256,7 @@ reverse the progression of neurodegenerative diseases">
                 <h4 class="modal-title">Joost Schulte</h4>
               </div>
               <div class="modal-body">
-                <!--<p><img class="img-responsive" src="" alt="Jooste Schulte Photo"></p>-->
+                <p><img class="img-responsive" src="assets/img/team/JSThumbnail.jpg" alt="Jooste Schulte Photo"></p>
                 <p>Dr. Joost Schulte is a neuroscientist with 20 years experience, and prior to co-founding Oxalys he has been active in neurodegeneration pharmaceutical R and D in both academic and industrial settings.  As a research scientist at EnVivo Pharmaceuticals (Cambridge, MA), he developed novel assays for therapeutics screening in Huntington’s, Parkinson’s and Alzheimer’s disease models, leading to the company’s first patented IP.   He then developed a Huntington’s disease high-content drug discovery platform at MIT and the Broad Institute in Cambridge, MA. The platform was applied to screening libraries at the Harvard Medical School DRSC and ICCB-L to discover the Oxalys pipeline therapeutics.  He has worked with the Harvard Catalyst Program in Translational Medicine and the European Huntington’s Disease Network to develop the clinical trial protocols for Oxalys’ Huntington’s disease upcoming clinical trial.  He holds a PhD in neuroscience from the University of British Columbia and carried out his postdoctoral research at MIT.  Dr. Schulte has been supported by the Rick Hansen Neurotrauma Initiative, National Science and Engineering Research Council (NSERC) and the Ontario Brain Institute/Ontario Centres of Excellence.</p>
               </div>
               <div class="modal-footer">
@@ -323,7 +323,7 @@ reverse the progression of neurodegenerative diseases">
 				<div class="modal-body">
 					<p>You can be part of the solution for developing effective therapeutics!
 					   Oxalys seeks equity investments of greater than $1M from private investors, and considers risk-sharing partnerships from industry. 
-					   Oxalys also is also significantly supported by its friends of neurodegeneration research. All friends support goes directly to research and development.
+					   Oxalys is also significantly supported by its friends of neurodegeneration research. All friends support goes directly to research and development.
 					   Friends can support us by contacting us, or via our PayPal donate link below.
 </p>
 				</div>
