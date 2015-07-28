@@ -6398,14 +6398,14 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #slide3 {
-	background-image: url(../img/backgrounds/Amaryllis-min.jpg);
+	background-image: url(../img/backgrounds/Balloons-min.jpg);
 	z-index: 1;
 }
 
 /* === ABOUT SECTION === */
 #about {
 	background-color: #F2F2F3;
-	padding-top: 77px;
+	padding-top: 100px;
 }
 
 #about img{
@@ -6440,25 +6440,26 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	color: #3F729B;
 }
 
-/* === THERAPEUTICS SECTION === */
+/* === BACKGROUND IMAGE SETTINGS === */
 
-#therapeutics{
-	background-color: #F2F2F3;
-	padding-top: 2%;
-	background-image: url(../img/backgrounds/Pipette.jpg);
+#therapeutics, #services{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 }
 
+/* === THERAPEUTICS SECTION === */
+
+#therapeutics{
+	background-color: #F2F2F3;
+	padding-top: 2%;
+	background-image: url(../img/backgrounds/Molecule1.jpg);
+}
+
 /* === SERVICES === */
 #services{
 	background-image: url(../img/backgrounds/Lab.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
 }
 
 #services p{
@@ -6479,13 +6480,14 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 /* === MODALS === */
 
 #support-modal .modal-footer p{
+	display: inline;
+	float: left;
 	color: white;
 }
 
 .modal-header{
 	background: #98CB4D;
 }
-
 
 .modal-body img{
 	margin-right: 3%;
@@ -6549,6 +6551,10 @@ form div p{
 	outline: 0px;
 }
 
+#support-btn i{
+	display: block;
+}
+
 #support-btn{
 	padding: 1%;
 }
@@ -6565,8 +6571,15 @@ form div p{
 	display: block;
 }
 
+#footerwrap .row img{
+    height: 100px;
+	width: 100px;
+	margin: 10px 0px 10px 0px;
+}
+
 #footerwrap .col-md-6{
 	width: 33.3%;
+	margin: auto;
 }
 
 #footerwrap .container{
@@ -6579,35 +6592,13 @@ form div p{
 
 #footer-nav{
 	position: relative;
-	right: 10.5px;
+	right: 11.5px;
 }
 
 #footerwrap h3{
 	color: white;
 	text-align: center;
 }
-
-/* === PARALLAX EFFECT === */
-/* 
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px);
-} */
 
 /* ==========================================================================
    MEDIA QUERIES
@@ -6634,8 +6625,8 @@ body .header {
 	}
 	
 	#team .btn{
-		margin-bottom: 2%;
-	}
+		margin-bottom: 7.5%;
+	}	
 }
 
 @media screen and (max-width:769px) {

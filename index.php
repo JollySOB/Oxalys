@@ -35,7 +35,7 @@
 			$mail->From = $sender_email;
 			$mail->FromName = $sender_name;
 			$mail->Body = $sender_message;
-			$mail->addAddress("contactcommunityfund@gmail.com");
+			$mail->addAddress("info@oxalys.ca");
 			
 			if(!$mail->send()) {
 				$response_message = "Error:" . $mail->ErrorInfo;
@@ -47,6 +47,9 @@
 		}
 	}
 ?>
+
+<!DOCTYPE HTML>
+<!-- Script to process the contact form -->
 
 <html lang="en">
 <head>
@@ -65,7 +68,7 @@ reverse the progression of neurodegenerative diseases">
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-<!-- Javascript via CDN -->
+<!-- JQuery via CDN -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <!-- Local fall back for jQuery in case of CDN outage -->
@@ -86,7 +89,7 @@ reverse the progression of neurodegenerative diseases">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand smoothScroll" href="#header"><img src="assets/img/LogoSmaller-min.png" alt="Logo"/></a>
+        <a class="navbar-brand smoothScroll" href="#header"><img src="assets/img/logos/OxalysLogo-min.png" alt="Oxalys Logo"/></a>
 	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -146,9 +149,9 @@ reverse the progression of neurodegenerative diseases">
 	  <ul class="list-inline social-buttons">
           <li><a href="https://twitter.com/oxalyspharma"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UCg3a0elR1aO_6-eQfJuCC2g"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-		  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://plus.google.com/118000953261302145546/posts"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/oxalys-pharmaceuticals"><i class="fa fa-linkedin"></i></a></li>
+		  <li><a href="https://instagram.com/oxalyspharma/"><i class="fa fa-instagram"></i></a></li>
         </ul>
       <div class="col-md-6">
         <h3>Everyone's Health Matters</h3>
@@ -313,6 +316,7 @@ reverse the progression of neurodegenerative diseases">
         </div>
         <!-- /.modal --> 
 		
+		<!-- Support Buttons Modal -->
 		<div class="modal fade" id="support-modal" tabindex="-1" role="dialog" aria-labelledby="support-modal" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -325,13 +329,21 @@ reverse the progression of neurodegenerative diseases">
 					   Oxalys seeks equity investments of greater than $1M from private investors, and considers risk-sharing partnerships from industry. 
 					   Oxalys is also significantly supported by its friends of neurodegeneration research. All friends support goes directly to research and development.
 					   Friends can support us by contacting us, or via our PayPal donate link below.
-</p>
+					</p>
 				</div>
               <div class="modal-footer">
-				<p>112 College Street - Suite 411<br>
-				   Toronto Ontario M5G 1L6</p></a>
+				<a href="https://www.google.ca/maps/place/112+College+St,+University+of+Toronto+-+St.+George+Campus,+Toronto,+ON+M5G+1L6/@43.6603996,-79.389428,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34b7c6a387e9:0xf6ed00694e7c9c93">
+					<p>112 College Street - Suite 411<br>
+					   Toronto Ontario M5G 1L6
+					</p>
+				</a>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="8ZBCAF2PJFM3E">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="Pay Pal Donate" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form> 
               </div>
-			  <i class="fa fa-step-forward fa-2x"></i>
             </div>
             <!-- /.modal-content --> 
           </div>
@@ -352,7 +364,7 @@ reverse the progression of neurodegenerative diseases">
 			  Toronto Ontario M5G 1L6</p></a>
 		  </div>
 		  <div id="support-btn" class="col-md-4">
-			<i class="fa fa-gift fa-2x"></i>
+			<i class="fa fa-exchange fa-2x"></i>
 			<a data-toggle="modal" href="#support-modal" class="btn btn-default">Support Us</a>
 		  </div>
 		  <div class="col-md-4"> 
@@ -362,12 +374,12 @@ reverse the progression of neurodegenerative diseases">
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 centered">
-        <?php
-				if ($_SERVER['REQUEST_METHOD'] == "POST") {
-					echo "<p>$response_message</p>";
-				}
-		?>
-        <form id="contact-form" method="post" action="index.php#contact" class="form" role="form">
+	  <?php
+			if ($_SERVER['REQUEST_METHOD'] == "POST") {
+				echo "<p>$response_message</p>";
+			}
+	  ?>
+        <form id="contact-form" method="post" action="index.php#contact" class="form">
           <div class="row">
             <div class="col-xs-6 col-md-6 form-group">
               <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
@@ -397,35 +409,29 @@ reverse the progression of neurodegenerative diseases">
   <span id="footer-nav" class="glyphicon glyphicon-chevron-up"></span>
   <div class="container">
     <div class="row">
-      <div id="supporters">
-		<h3>Our Supporters</h3>
+		<h3>Supporting Us</h3>
 		<div class="col-md-6">
-			<p>Supporter 1</p>
-			<p>Supporter 4</p>
+			<a href="http://www.impactcentre.ca/"><img src="assets/img/logos/ImpactCentreLogo.png" alt="Impact Centre"></a>
 		</div>
 		<div class="col-md-6">
-			<p>Supporter 2</p>
-			<p>Supporter 5</p>
+			<a href="http://www.marsdd.com/"><img src="assets/img/logos/MaRSLogo.png" alt="MaRS"></a>
 		</div>
 		<div class="col-md-6">
-			<p>Supporter 3</p>
-			<p>Supporter 6</p>
+			<a href="http://riccentre.ca/"><img src="assets/img/logos/RICCentreLogo.png" alt="RIC Centre"></a>
 		</div>
 	  </div>
 	  <div>
 		<ul class="list-inline">
 			<li><span class="copyright">Copyright &copy; 2015 Oxalys Pharmaceuticals</span></li>
 			<li><span class="copyright">Original Template Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span></li>
-			<li><span class="copyright">Icons provided by <a href="http://glyphicons.com/">Glyphicons</a></span></li>	
+			<li><span class="copyright">Icons provided by <a href="http://glyphicons.com/">Glyphicons</a> and <a href="http://fontawesome.io">Dave Gandy</a></span></li>	
 	    </ul>
 	  </div>
     </div>
-  </div>
 </div>
- 
 <!-- Scripts placed at the end of the document so that the pages load faster --> 
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
-<script type="text/javascript" src="assets/js/carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/slides.min.js"></script>
 </body>
 </html>
