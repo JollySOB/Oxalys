@@ -406,7 +406,9 @@ reverse the progression of neurodegenerative diseases">
 <!-- container -->
 
 <div id="footerwrap">
-  <span id="footer-nav" class="glyphicon glyphicon-chevron-up"></span>
+  <div class="row">
+	<span id="footer-nav" class="glyphicon glyphicon-chevron-up"></span>
+  </div>
   <div class="container">
     <div class="row">
 		<h3>Supporting Us</h3>

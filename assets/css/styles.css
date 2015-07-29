@@ -6305,8 +6305,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
    =========================================================================
 */
 
-/*Rename to header later, and find out why this causes the nav arrows to disappear /*
-
 /* === NAVBAR === */
 .navbar-fixed-top, .navbar-fixed-bottom {
     border-radius: 0;
@@ -6454,7 +6452,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 #therapeutics{
 	background-color: #F2F2F3;
 	padding-top: 2%;
-	background-image: url(../img/backgrounds/Molecule1.jpg);
+	background-image: url(../img/backgrounds/Chem2.jpg);
 }
 
 /* === SERVICES === */
@@ -6572,9 +6570,9 @@ form div p{
 }
 
 #footerwrap .row img{
-    height: 100px;
-	width: 100px;
-	margin: 10px 0px 10px 0px;
+    height: 50%;
+	width: 50%;
+	margin: 10px auto;
 }
 
 #footerwrap .col-md-6{
@@ -6590,16 +6588,10 @@ form div p{
 	opacity: 0.25;
 }
 
-#footer-nav{
-	position: relative;
-	right: 11.5px;
-}
-
-#footerwrap h3{
+#footer-nav, #footerwrap h3{
 	color: white;
 	text-align: center;
 }
-
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
@@ -6664,5 +6656,19 @@ body .header {
 @media screen and (max-width:328px) {
 	.in, .collapsing{
 		margin-top: 65px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	#footerwrap .row img{
+		height: 70%;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width:400px) {
+	#footerwrap .row img{
+		height: 100%;
+		width: 100%;
 	}
 }
