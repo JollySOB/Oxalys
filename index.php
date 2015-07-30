@@ -58,7 +58,7 @@ reverse the progression of neurodegenerative diseases">
 <title>Oxalys Pharmaceuticals: Huntington's And Parkinson's Disease Therapeutics</title>
 
 <!-- Core CSS -->
-<link href="assets/css/styles.css" rel="stylesheet">
+<link href="assets/css/styles.min.css" rel="stylesheet">
 
 <!-- Fonts -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
