@@ -6459,6 +6459,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 /* === SERVICES === */
 #services{
 	background-image: url(../img/backgrounds/Lab-min.jpg);
+	padding-top: 75px;
 }
 
 #services p{

@@ -21,17 +21,7 @@
 		}
 		
 		else {
-			//Try using the PHP mail funtion to send email from the web server itself. Might need to confidugre php.ini in order for mail() to work. 
-			//If that does not work, use smpt server belowtry smtp servers.
 			$mail = new PHPmailer();
-			$mail->SMTPDebug = 0;
-			/* $mail->IsSMTP();    
-			$mail->SMTPAuth = True;
-			$mail->SMTPSecure = 'tls';
-			$mail->Host = "smtp.live.com";
-			$mail->Port = 25;
-			$mail->Username = "bungalo1@hotmail.com";
-			$mail->Password = "";*/
 			$mail->From = $sender_email;
 			$mail->FromName = $sender_name;
 			$mail->Body = $sender_message;
@@ -58,7 +48,7 @@ reverse the progression of neurodegenerative diseases">
 <title>Oxalys Pharmaceuticals: Huntington's And Parkinson's Disease Therapeutics</title>
 
 <!-- Core CSS -->
-<link href="assets/css/styles.min.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
 
 <!-- Fonts -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -79,6 +69,7 @@ reverse the progression of neurodegenerative diseases">
 [endif]-->
 </head>
 
+<!-- ==== HTML BODY ==== -->
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 <div id="navbar-main"> 
   <!-- Fixed navbar -->
@@ -102,7 +93,7 @@ reverse the progression of neurodegenerative diseases">
   </div>
 </div>
 
-<!-- ==== HEADERWRAP ==== -->
+<!-- ==== HEADER ==== -->
 <div id="header">
 	<!-- Carousel navigation arrows -->
 	<span id="left-nav" class="glyphicon glyphicon-chevron-left"></span>
@@ -171,7 +162,7 @@ reverse the progression of neurodegenerative diseases">
       </div>
     <!-- row --> 
   </div>
-</div>
+  </div>
 </div>
 <!-- container --> 
 
@@ -346,7 +337,6 @@ reverse the progression of neurodegenerative diseases">
           <!-- /.modal-dialog --> 
         </div>
         <!-- /.modal --> 
- 
 
 <!-- ==== CONTACT ==== -->
 <div id="contact">
