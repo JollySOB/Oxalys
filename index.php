@@ -144,7 +144,7 @@ reverse the progression of neurodegenerative diseases">
       <h2 class="centered">ABOUT US</h2>
 	  <ul class="list-inline social-buttons">
           <li><a href="https://twitter.com/oxalyspharma"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCg3a0elR1aO_6-eQfJuCC2g"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCqJLCemo9ig7YIUMxgjMOXQ"><i class="fa fa-youtube"></i></a></li>
           <li><a href="https://plus.google.com/103310619318075487517/about"><i class="fa fa-google-plus"></i></a></li>
           <li><a href="https://www.linkedin.com/company/oxalys-pharmaceuticals"><i class="fa fa-linkedin"></i></a></li>
 		  <li><a href="https://instagram.com/oxalyspharma/"><i class="fa fa-instagram"></i></a></li>

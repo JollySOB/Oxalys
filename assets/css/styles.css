@@ -6396,7 +6396,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #slide3 {
-	background-image: url(../img/backgrounds/BalloonsD.jpg);
+	background-image: url(../img/backgrounds/Balloons-min.jpg);
 	background-position: center 25px;
 	z-index: 1;
 }
@@ -6452,8 +6452,8 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 #therapeutics{
 	background-color: #F2F2F3;
-	padding-top: 2%;
-	background-image: url(../img/backgrounds/Chem3.jpg);
+	padding-top: 75px;
+	background-image: url(../img/backgrounds/Chem.jpg);
 }
 
 /* === SERVICES === */
@@ -6470,6 +6470,10 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 /* === TEAM === */	
+
+#team{
+	padding-top: 75px;
+}
 
 #team img{
 	height: 100px;
@@ -6502,6 +6506,11 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 /* === CONTACT === */
+
+#contact{
+	padding-top: 75px;
+}
+
 form div p{
 	margin: auto auto 1% auto;
 }
@@ -6660,10 +6669,10 @@ body .header {
 	}
 }
 
- @media screen and (max-width:300px) {
+@media screen and (max-width:300px) {
 	#footerwrap .row img{
 		position: relative;
-		right: 5px;
+		right: 10px;
 	}
 }
 
