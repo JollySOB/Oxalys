@@ -31,7 +31,7 @@
 			$mail->Host = "smtp.live.com";
 			$mail->Port = 25;
 			$mail->Username = "bungalo1@hotmail.com";
-			$mail->Password = "";  */
+			$mail->Password = "";*/
 			$mail->From = $sender_email;
 			$mail->FromName = $sender_name;
 			$mail->Body = $sender_message;
@@ -47,9 +47,6 @@
 		}
 	}
 ?>
-
-<!DOCTYPE HTML>
-<!-- Script to process the contact form -->
 
 <html lang="en">
 <head>
@@ -94,10 +91,10 @@ reverse the progression of neurodegenerative diseases">
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#header" class="smoothScroll">Home</a></li>
-          <li> <a href="#about" class="smoothScroll"> About</a></li>
-          <li> <a href="#services" class="smoothScroll"> Services</a></li>
-          <li> <a href="#team" class="smoothScroll"> Team</a></li>
-          <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+          <li> <a href="#about" class="smoothScroll">About</a></li>
+          <li> <a href="#therapeutics" class="smoothScroll">Therapeutics</a></li>
+          <li> <a href="#team" class="smoothScroll">Team</a></li>
+          <li> <a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -128,7 +125,7 @@ reverse the progression of neurodegenerative diseases">
 	<div id="slide3" class="slide">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
-		<h3>Targeting Diseases, Not Symptoms</h3>
+		<h3>More Effective Therapies</h3>
 		<a href="#therapeutics" class="smoothScroll btn btn-lg more-info">Our Therapeutics</a>
 	 </div>
 	</div>
@@ -145,11 +142,10 @@ reverse the progression of neurodegenerative diseases">
 <div id="about">
   <div class="container">
       <h2 class="centered">ABOUT US</h2>
-	  <!--<img class="img-responsive" src="assets/img/about/about1.jpg" alt="Connect With Us">-->
 	  <ul class="list-inline social-buttons">
           <li><a href="https://twitter.com/oxalyspharma"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UCg3a0elR1aO_6-eQfJuCC2g"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="https://plus.google.com/118000953261302145546/posts"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://plus.google.com/103310619318075487517/about"><i class="fa fa-google-plus"></i></a></li>
           <li><a href="https://www.linkedin.com/company/oxalys-pharmaceuticals"><i class="fa fa-linkedin"></i></a></li>
 		  <li><a href="https://instagram.com/oxalyspharma/"><i class="fa fa-instagram"></i></a></li>
         </ul>
@@ -322,7 +318,7 @@ reverse the progression of neurodegenerative diseases">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">How You Can Make A Difference</h4>
+                <h4 class="modal-title">Investors And Supporters</h4>
 			  </div>
 				<div class="modal-body">
 					<p>You can be part of the solution for developing effective therapeutics!
@@ -363,13 +359,13 @@ reverse the progression of neurodegenerative diseases">
 			<p>112 College Street - Suite 411<br>
 			  Toronto Ontario M5G 1L6</p></a>
 		  </div>
-		  <div id="support-btn" class="col-md-4">
-			<i class="fa fa-exchange fa-2x"></i>
-			<a data-toggle="modal" href="#support-modal" class="btn btn-default">Support Us</a>
-		  </div>
 		  <div class="col-md-4"> 
 			<i class="fa fa-envelope-o fa-2x"></i>
 			<p>info@oxalys.ca</p>
+		  </div>
+		  <div id="support-btn" class="col-md-4">
+			<i class="fa fa-exchange fa-2x"></i>
+			<a data-toggle="modal" href="#support-modal" class="btn btn-default">Investors & Supporters</a>
 		  </div>
     </div>
     <div class="row">
@@ -388,7 +384,7 @@ reverse the progression of neurodegenerative diseases">
               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
             </div>
           </div>
-          <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+          <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required></textarea>
 		  <div class="row">
 				<button class="btn btn-lg" type="submit">Send Message</button>
 				<div id="spam-honeypot-container" class="col-xs-6 col-md-6 form-group">
@@ -413,7 +409,7 @@ reverse the progression of neurodegenerative diseases">
     <div class="row">
 		<h3>Supporting Us</h3>
 		<div class="col-md-6">
-			<a href="http://www.impactcentre.ca/"><img src="assets/img/logos/ImpactCentreLogo.png" alt="Impact Centre"></a>
+			<a href="http://www.impactcentre.ca/"><img style="width: 200px"src="assets/img/logos/ImpactCentreLogo.png" alt="Impact Centre"></a>
 		</div>
 		<div class="col-md-6">
 			<a href="http://www.marsdd.com/"><img src="assets/img/logos/MaRSLogo.png" alt="MaRS"></a>
@@ -426,7 +422,9 @@ reverse the progression of neurodegenerative diseases">
 		<ul class="list-inline">
 			<li><span class="copyright">Copyright &copy; 2015 Oxalys Pharmaceuticals</span></li>
 			<li><span class="copyright">Original Template Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span></li>
-			<li><span class="copyright">Icons provided by <a href="http://glyphicons.com/">Glyphicons</a> and <a href="http://fontawesome.io">Dave Gandy</a></span></li>	
+			<li><span class="copyright">Icons provided by <a href="http://glyphicons.com/">Glyphicons</a> and <a href="http://fontawesome.io">Dave Gandy</a></span></li>
+			<li><span class="copyright">Photos: Dreamstime, Silmara Albi</span></li>
+			<li><span class="copyright">Designed and Developed by Cody Rosevear</span></li>
 	    </ul>
 	  </div>
     </div>

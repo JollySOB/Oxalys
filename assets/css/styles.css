@@ -6396,7 +6396,8 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #slide3 {
-	background-image: url(../img/backgrounds/Balloons-min.jpg);
+	background-image: url(../img/backgrounds/BalloonsD.jpg);
+	background-position: center 25px;
 	z-index: 1;
 }
 
@@ -6452,7 +6453,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 #therapeutics{
 	background-color: #F2F2F3;
 	padding-top: 2%;
-	background-image: url(../img/backgrounds/Chem2.jpg);
+	background-image: url(../img/backgrounds/Chem3.jpg);
 }
 
 /* === SERVICES === */
@@ -6570,8 +6571,8 @@ form div p{
 }
 
 #footerwrap .row img{
-    height: 50%;
-	width: 50%;
+    height: 100px;
+	width: 100px;
 	margin: 10px auto;
 }
 
@@ -6659,16 +6660,16 @@ body .header {
 	}
 }
 
-@media screen and (max-width:992px) {
+ @media screen and (max-width:300px) {
 	#footerwrap .row img{
-		height: 70%;
-		width: 70%;
+		position: relative;
+		right: 5px;
 	}
 }
 
 @media screen and (max-width:400px) {
 	#footerwrap .row img{
-		height: 100%;
-		width: 100%;
+		position: relative;
+		right: 3.5px;
 	}
-}
+} 
