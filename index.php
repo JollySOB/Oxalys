@@ -398,15 +398,15 @@ reverse the progression of neurodegenerative diseases">
   <div class="container">
     <div class="row">
 		<h3>Supporting Us</h3>
-		<div class="col-md-6">
-			<a href="http://www.impactcentre.ca/"><img style="width: 200px"src="assets/img/logos/ImpactCentreLogo.png" alt="Impact Centre"></a>
-		</div>
-		<div class="col-md-6">
-			<a href="http://www.marsdd.com/"><img src="assets/img/logos/MaRSLogo.png" alt="MaRS"></a>
-		</div>
-		<div class="col-md-6">
-			<a href="http://riccentre.ca/"><img src="assets/img/logos/RICCentreLogo.png" alt="RIC Centre"></a>
-		</div>
+			<div class="col-md-6">
+				<a href="http://www.impactcentre.ca/"><img style="width: 200px"src="assets/img/logos/ImpactCentreLogo.png" alt="Impact Centre"></a>
+			</div>
+			<div class="col-md-6">
+				<a href="http://www.marsdd.com/"><img src="assets/img/logos/MaRSLogo.png" alt="MaRS Discovery District"></a>
+			</div>
+			<div class="col-md-6">
+				<a href="http://riccentre.ca/"><img src="assets/img/logos/RICCentreLogo.png" alt="RIC Centre"></a>
+			</div>
 	  </div>
 	  <div>
 		<ul class="list-inline">
