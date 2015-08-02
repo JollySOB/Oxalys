@@ -83,8 +83,9 @@ reverse the progression of neurodegenerative diseases">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#header" class="smoothScroll">Home</a></li>
           <li> <a href="#about" class="smoothScroll">About</a></li>
+		  <li><a href="#services" class="smoothScroll">Services</a></li>
+		  <li> <a href="#team" class="smoothScroll">Team</a></li>
           <li> <a href="#therapeutics" class="smoothScroll">Therapeutics</a></li>
-          <li> <a href="#team" class="smoothScroll">Team</a></li>
           <li> <a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
       </div>
@@ -100,20 +101,20 @@ reverse the progression of neurodegenerative diseases">
 	<span id="right-nav" class="glyphicon glyphicon-chevron-right"></span>
 	<!-- Carousel slide content -->
 	<div id="slide1" class="slide">
-		<div id="active-content" class="slide-content">
+		<div id="active-content" class="slide-content" style="display: block">
 			<h2>Oxalys Pharmaceuticals</h2>
 			<h3>Everyone's Health Matters</h3>
 			<a href="#about" class="smoothScroll btn btn-lg more-info">Learn More</a>
 		</div>
 	</div>
-	<div id="slide2" class="slide">
+	<div id="slide2" class="slide" style="display: none">
 	  <div class="slide-content">
 		<h2>Intelligent Drug Discovery</h2>
 		<h3>Targeting Causes, Not Symptoms.</h3>
 		<a href="#services" class="smoothScroll btn btn-lg more-info">Our Services</a>
 	  </div>
 	</div>
-	<div id="slide3" class="slide">
+	<div id="slide3" class="slide" style="display: none">
 	  <div class="slide-content">
 		<h2>Better Brain Health, For Longer</h2>
 		<h3>More Effective Therapies</h3>
