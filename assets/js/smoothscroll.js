@@ -5,6 +5,31 @@
  * All individual scripts remain property of their copyrighters.
  * Date: 10-Sep-2013
  * Version: 1.0.1
+? Pinnedpin
+
+? Today
+
+? Yesterday
+
+? Last week
+
+? Week 7/26 - 8/1
+
+? Week 7/19 - 7/25
+? Week 7/12 - 7/18
+
+? Week 7/5 - 7/11
+? Week 6/28 - 7/4
+? Week 6/21 - 6/27
+? Week 6/14 - 6/20
+? Week 6/7 - 6/13
+? Week 5/31 - 6/6
+? Week 5/24 - 5/30
+? Week 5/17 - 5/23
+? Week 5/10 - 5/16
+? Week 4/26 - 5/2
+? Week 4/19 - 4/25
+
  */
 if (!window['jQuery']) alert('The jQuery library must be included before the smoothscroll.js file.  The plugin will not work propery.');
 

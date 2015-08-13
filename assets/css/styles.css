@@ -6387,17 +6387,17 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #slide1 {
-	background-image: url(../img/backgrounds/Oxalys-min.jpg);
+	background-image: url(../img/backgrounds/Oxalys.jpg);
 	z-index: 3;
 }
 
 #slide2{
-	background-image: url(../img/backgrounds/MountainPath-min.jpg);
+	background-image: url(../img/backgrounds/MountainPath.jpg);
 	z-index: 2;
 }
 
 #slide3 {
-	background-image: url(../img/backgrounds/Balloons-min.jpg);
+	background-image: url(../img/backgrounds/Balloons.jpg);
 	background-position: center 25px;
 	z-index: 1;
 }
@@ -6459,7 +6459,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 /* === SERVICES === */
 #services{
-	background-image: url(../img/backgrounds/Lab-min.jpg);
+	background-image: url(../img/backgrounds/Lab.jpg);
 	padding-top: 75px;
 }
 
@@ -6584,11 +6584,6 @@ form div p{
 #footerwrap .row img{
     height: 100px;
 	width: 100px;
-	margin-left: 50px;
-}
-
-#footerwrap .col-md-6{
-	width: 33.3%;
 	margin: auto;
 }
 
@@ -6622,7 +6617,16 @@ body .header {
 }
 }
 
-/* /* The rest of the queries address various layout issues that occur as the screen width gets smaller.*/
+
+@media screen and (min-width:992px) {
+
+	#footerwrap .col-md-6{
+		width: 33.3%;
+		margin: auto;
+	}
+}
+
+/* The rest of the queries address various layout issues that occur as the screen width gets smaller.*/
 @media screen and (max-width:991px) {
 	#support-btn{
 		margin-bottom: 40px;
@@ -6635,6 +6639,11 @@ body .header {
 	#footerwrap .row img{
 		margin-top: 20px;
 		margin-left: 0px;
+	}
+	
+	#footerwrp .col-md-6{
+		width: 100px;
+		margin: auto;
 	}
 }
 
@@ -6667,22 +6676,6 @@ body .header {
 	}
 }
 
-@media screen and (max-width:650px){
-	
-	#footerwrap .col-md-6{
-		position: relative;
-		right: 2%;
-	}
-}
-
-@media screen and (max-width:450px){
-	
-	#footerwrap .col-md-6{
-		position: relative;
-		right: 8%;
-	}
-}
-
 @media screen and (max-width:411px) {
 	.modal-body p{
 		clear: left;
@@ -6695,7 +6688,7 @@ body .header {
 	}
 }
 
-@media screen and (max-width:328px) {
+@media screen and (max-width:348px) {
 
 	.in, .collapsing{
 		margin-top: 7px;
@@ -6710,4 +6703,11 @@ body .header {
 		position: relative;
 		bottom: 65px;
 	}
+}
+
+@media screen and (max:width: 348px) {
+	/* #footerwrap img{
+		position: relative;
+		right: 5px;
+	} */
 }

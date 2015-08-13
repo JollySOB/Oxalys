@@ -77,7 +77,7 @@ reverse the progression of neurodegenerative diseases">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand smoothScroll" href="#header"><img src="assets/img/logos/OxalysLogo-min.png" alt="Oxalys Logo"/></a>
+        <a class="navbar-brand smoothScroll" href="#header"><img src="assets/img/logos/OxalysLogo.png" alt="Oxalys Logo"/></a>
 	  </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -400,7 +400,7 @@ reverse the progression of neurodegenerative diseases">
     <div class="row">
 		<h3>Supporting Us</h3>
 			<div class="col-md-6">
-				<a href="http://www.impactcentre.ca/"><img style="width: 200px"src="assets/img/logos/ImpactCentreLogo.png" alt="Impact Centre"></a>
+				<a href="http://www.impactcentre.ca/"><img style="width: 200px;"src="assets/img/logos/ImpactCentreLogo.png" alt="Impact Centre"></a>
 			</div>
 			<div class="col-md-6">
 				<a href="http://www.marsdd.com/"><img src="assets/img/logos/MaRSLogo.png" alt="MaRS Discovery District"></a>
